@@ -2,7 +2,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, there!")
+        Text(getReversedText("Hello, there"))
+    }
+    
+    private func getReversedText(_ text: String) -> String {
+        String(text.reversed())
     }
 }
 
