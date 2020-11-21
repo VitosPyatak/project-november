@@ -8,6 +8,10 @@ struct ContentView: View {
     private func getReversedText(_ text: String) -> String {
         String(text.reversed())
     }
+    
+    private func test() {
+        print("test")
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
