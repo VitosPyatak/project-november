@@ -19,6 +19,12 @@ struct ContentView: View {
                         Text(ButtonPlacehoder.USERS_LIST)
                     }
                 }
+                
+                NavigationLink(destination: PhotosView()) {
+                    Button(action: {}) {
+                        Text(ButtonPlacehoder.PHOTOS_LIST)
+                    }
+                }
             }
             .navigationTitle(NavigationTitles.CREATE_USER)
         }

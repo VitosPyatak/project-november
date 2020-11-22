@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1191EB65E0E7E12F2492720D /* Pods_project_november.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA3EB89D0B3DB1915E48485 /* Pods_project_november.framework */; };
 		84B132CF256927FB001B403B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132CE256927FB001B403B /* AppDelegate.swift */; };
 		84B132D1256927FB001B403B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132D0256927FB001B403B /* SceneDelegate.swift */; };
 		84B132D3256927FB001B403B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132D2256927FB001B403B /* ContentView.swift */; };
@@ -40,6 +41,14 @@
 		84B133A6256A56C0001B403B /* UserBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B133A5256A56C0001B403B /* UserBuilder.swift */; };
 		84B133B9256A5BC0001B403B /* JsonCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B133B8256A5BC0001B403B /* JsonCoder.swift */; };
 		84B133BE256A6B27001B403B /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B133BD256A6B27001B403B /* UsersListView.swift */; };
+		84B133FA256A87A4001B403B /* JPApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B133F9256A87A4001B403B /* JPApiConfig.swift */; };
+		84B133FF256A890F001B403B /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B133FE256A890F001B403B /* PhotosView.swift */; };
+		84B13404256A89B8001B403B /* PhotosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B13403256A89B8001B403B /* PhotosController.swift */; };
+		84B13409256A8A12001B403B /* JPUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B13408256A8A12001B403B /* JPUrlBuilder.swift */; };
+		84B13413256ACC67001B403B /* PhotoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B13412256ACC67001B403B /* PhotoEntity.swift */; };
+		84B13426256AD937001B403B /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B13425256AD937001B403B /* PhotosViewModel.swift */; };
+		84B1342C256AEE6C001B403B /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1342B256AEE6C001B403B /* RemoteImageView.swift */; };
+		84B13431256AF10E001B403B /* RemoteImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B13430256AF10E001B403B /* RemoteImageURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6813B6CC184DEC37BA901B2B /* Pods-project-november.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project-november.release.xcconfig"; path = "Target Support Files/Pods-project-november/Pods-project-november.release.xcconfig"; sourceTree = "<group>"; };
 		84B132CB256927FB001B403B /* project-november.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project-november.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B132CE256927FB001B403B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B132D0256927FB001B403B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +109,16 @@
 		84B133A5256A56C0001B403B /* UserBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBuilder.swift; sourceTree = "<group>"; };
 		84B133B8256A5BC0001B403B /* JsonCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonCoder.swift; sourceTree = "<group>"; };
 		84B133BD256A6B27001B403B /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
+		84B133F9256A87A4001B403B /* JPApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPApiConfig.swift; sourceTree = "<group>"; };
+		84B133FE256A890F001B403B /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		84B13403256A89B8001B403B /* PhotosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosController.swift; sourceTree = "<group>"; };
+		84B13408256A8A12001B403B /* JPUrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPUrlBuilder.swift; sourceTree = "<group>"; };
+		84B13412256ACC67001B403B /* PhotoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEntity.swift; sourceTree = "<group>"; };
+		84B13425256AD937001B403B /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
+		84B1342B256AEE6C001B403B /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		84B13430256AF10E001B403B /* RemoteImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageURL.swift; sourceTree = "<group>"; };
+		DBA3EB89D0B3DB1915E48485 /* Pods_project_november.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_project_november.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06197A5A9FF4EFB6D684EA5 /* Pods-project-november.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project-november.debug.xcconfig"; path = "Target Support Files/Pods-project-november/Pods-project-november.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1191EB65E0E7E12F2492720D /* Pods_project_november.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +147,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E3ACFDC345DA05FED07BEC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBA3EB89D0B3DB1915E48485 /* Pods_project_november.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84B132C2256927FB001B403B = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +162,8 @@
 				84B132E7256927FD001B403B /* project-novemberTests */,
 				84B132F2256927FD001B403B /* project-novemberUITests */,
 				84B132CC256927FB001B403B /* Products */,
+				DCF3C5FABBEAC0D0173E0415 /* Pods */,
+				1E3ACFDC345DA05FED07BEC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,6 +229,7 @@
 			children = (
 				84B132D2256927FB001B403B /* ContentView.swift */,
 				84B133BD256A6B27001B403B /* UsersListView.swift */,
+				84B133FE256A890F001B403B /* PhotosView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +266,7 @@
 		84B1330B25692DB5001B403B /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				84B133F8256A85FC001B403B /* API */,
 				84B1334C25693C17001B403B /* GeneralConfigs */,
 				84B1334225693B30001B403B /* FormConfigs */,
 				84B1333225693A79001B403B /* FormFieldId.swift */,
@@ -288,6 +321,7 @@
 		84B1336825693EAB001B403B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				84B133F7256A85E8001B403B /* Controllers */,
 				84B133B7256A5BAB001B403B /* Coders */,
 				84B133A4256A56B3001B403B /* Builders */,
 				84B1339E256A5618001B403B /* Entities */,
@@ -302,6 +336,8 @@
 			children = (
 				84B1336F25694180001B403B /* Managers */,
 				84B1337025694192001B403B /* RegisterFormVIewModel.swift */,
+				84B13425256AD937001B403B /* PhotosViewModel.swift */,
+				84B13430256AF10E001B403B /* RemoteImageURL.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -326,6 +362,7 @@
 		84B1338025694683001B403B /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				84B1342A256AEE20001B403B /* Images */,
 				84B133C5256A79E1001B403B /* ListElements */,
 				84B133812569468B001B403B /* TextFields */,
 			);
@@ -343,7 +380,8 @@
 		84B13390256A54AD001B403B /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				84B13391256A54C0001B403B /* UserEntity.swift */,
+				84B13411256ACC4B001B403B /* App */,
+				84B13410256ACC43001B403B /* API */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -376,6 +414,7 @@
 			isa = PBXGroup;
 			children = (
 				84B133A5256A56C0001B403B /* UserBuilder.swift */,
+				84B13408256A8A12001B403B /* JPUrlBuilder.swift */,
 			);
 			path = Builders;
 			sourceTree = "<group>";
@@ -395,6 +434,55 @@
 			path = ListElements;
 			sourceTree = "<group>";
 		};
+		84B133F7256A85E8001B403B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84B13403256A89B8001B403B /* PhotosController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84B133F8256A85FC001B403B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				84B133F9256A87A4001B403B /* JPApiConfig.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		84B13410256ACC43001B403B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				84B13412256ACC67001B403B /* PhotoEntity.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		84B13411256ACC4B001B403B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				84B13391256A54C0001B403B /* UserEntity.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		84B1342A256AEE20001B403B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				84B1342B256AEE6C001B403B /* RemoteImageView.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		DCF3C5FABBEAC0D0173E0415 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E06197A5A9FF4EFB6D684EA5 /* Pods-project-november.debug.xcconfig */,
+				6813B6CC184DEC37BA901B2B /* Pods-project-november.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -402,9 +490,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84B132F8256927FD001B403B /* Build configuration list for PBXNativeTarget "project-november" */;
 			buildPhases = (
+				C15A41BCD785731571EF3DA4 /* [CP] Check Pods Manifest.lock */,
 				84B132C7256927FB001B403B /* Sources */,
 				84B132C8256927FB001B403B /* Frameworks */,
 				84B132C9256927FB001B403B /* Resources */,
+				AF1E14966D349A9F119FFDF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -520,6 +610,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AF1E14966D349A9F119FFDF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-project-november/Pods-project-november-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-project-november/Pods-project-november-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-project-november/Pods-project-november-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C15A41BCD785731571EF3DA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-project-november-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84B132C7256927FB001B403B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -530,23 +662,31 @@
 				84B132CF256927FB001B403B /* AppDelegate.swift in Sources */,
 				84B133282569356D001B403B /* RoundedTextFieldStyle.swift in Sources */,
 				84B133BE256A6B27001B403B /* UsersListView.swift in Sources */,
+				84B13409256A8A12001B403B /* JPUrlBuilder.swift in Sources */,
 				84B13392256A54C0001B403B /* UserEntity.swift in Sources */,
+				84B13426256AD937001B403B /* PhotosViewModel.swift in Sources */,
 				84B1337125694192001B403B /* RegisterFormVIewModel.swift in Sources */,
 				84B132D6256927FB001B403B /* project_november.xcdatamodeld in Sources */,
 				84B1336A25693EBD001B403B /* Validation.swift in Sources */,
+				84B13404256A89B8001B403B /* PhotosController.swift in Sources */,
 				84B1334E25693C26001B403B /* SystemIcons.swift in Sources */,
+				84B13431256AF10E001B403B /* RemoteImageURL.swift in Sources */,
+				84B1342C256AEE6C001B403B /* RemoteImageView.swift in Sources */,
 				84B1333B25693ACE001B403B /* FormConfig.swift in Sources */,
 				84B1331525692E3B001B403B /* StringConstants.swift in Sources */,
+				84B133FA256A87A4001B403B /* JPApiConfig.swift in Sources */,
 				84B1333325693A79001B403B /* FormFieldId.swift in Sources */,
 				84B133A6256A56C0001B403B /* UserBuilder.swift in Sources */,
 				84B1337C25694554001B403B /* RegisterFormManager.swift in Sources */,
 				84B1335F25693E24001B403B /* TextFieldInput.swift in Sources */,
+				84B133FF256A890F001B403B /* PhotosView.swift in Sources */,
 				84B13376256941A8001B403B /* FormManager.swift in Sources */,
 				84B1334525693B4E001B403B /* RegisterFormFields.swift in Sources */,
 				84B1331A25692FF6001B403B /* Messages.swift in Sources */,
 				84B1330D25692DC7001B403B /* Placeholders.swift in Sources */,
 				84B1336425693E97001B403B /* FormModel.swift in Sources */,
 				84B1335825693C98001B403B /* Regex.swift in Sources */,
+				84B13413256ACC67001B403B /* PhotoEntity.swift in Sources */,
 				84B132D1256927FB001B403B /* SceneDelegate.swift in Sources */,
 				84B13399256A5508001B403B /* UserDefaults.swift in Sources */,
 				84B1335325693C4C001B403B /* KeyboardTypes.swift in Sources */,
@@ -717,6 +857,7 @@
 		};
 		84B132F9256927FD001B403B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E06197A5A9FF4EFB6D684EA5 /* Pods-project-november.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -738,6 +879,7 @@
 		};
 		84B132FA256927FD001B403B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6813B6CC184DEC37BA901B2B /* Pods-project-november.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
