@@ -1,7 +1,7 @@
 import Foundation
 
 class RegisterFormViewModel: ObservableObject {
-    @Published var model: FormModel<RegisterFormManager> = createModel()
+    @Published private var model: FormModel<RegisterFormManager> = createModel()
 
     var fields: [TextFieldInput] {
         get { model.formFields }
