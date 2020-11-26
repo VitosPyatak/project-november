@@ -1,7 +1,8 @@
 import Foundation
 
 struct TextFieldInput: Identifiable {
-    var id: FormFieldId
+    var id = UUID()
+    var fieldId: FormFieldId
     var label: String
     var isSecured: Bool
     
@@ -10,7 +11,7 @@ struct TextFieldInput: Identifiable {
     var isValidated: Bool = false
     
     init(id: FormFieldId, label: String, isSecured: Bool = false) {
-        self.id = id
+        self.fieldId = id
         self.label = label
         self.isSecured = isSecured
     }

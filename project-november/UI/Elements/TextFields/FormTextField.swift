@@ -50,7 +50,7 @@ struct FormTextField: View {
     }
 
     private func getFieldId() -> FormFieldId {
-        textFieldEntry.id.wrappedValue
+        textFieldEntry.fieldId.wrappedValue
     }
 
     private func getColor() -> Color {

@@ -11,7 +11,7 @@ struct UserBuilder {
     
     private static func buildProperty(with field: TextFieldInput, for user: inout UserEntity) {
         let fieldInputValue = field.input
-        switch field.id {
+        switch field.fieldId {
             case .firstname:
                 user.firstName = fieldInputValue
             case .lastname:

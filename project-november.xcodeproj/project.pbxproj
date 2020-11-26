@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2C72E8A9D85A64BC90B5BAC1 /* libPods-project-november.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0E1EB61FD788D6926E20F6 /* libPods-project-november.a */; };
+		84546A9A257057C500845CEB /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84546A99257057C500845CEB /* ImageLoader.swift */; };
 		84B132CF256927FB001B403B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132CE256927FB001B403B /* AppDelegate.swift */; };
 		84B132D1256927FB001B403B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132D0256927FB001B403B /* SceneDelegate.swift */; };
 		84B132D3256927FB001B403B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132D2256927FB001B403B /* ContentView.swift */; };
@@ -70,6 +71,7 @@
 
 /* Begin PBXFileReference section */
 		6813B6CC184DEC37BA901B2B /* Pods-project-november.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project-november.release.xcconfig"; path = "Target Support Files/Pods-project-november/Pods-project-november.release.xcconfig"; sourceTree = "<group>"; };
+		84546A99257057C500845CEB /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		84B132CB256927FB001B403B /* project-november.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project-november.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B132CE256927FB001B403B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B132D0256927FB001B403B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +155,14 @@
 				FA0E1EB61FD788D6926E20F6 /* libPods-project-november.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84546A98257057A200845CEB /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				84546A99257057C500845CEB /* ImageLoader.swift */,
+			);
+			path = Loaders;
 			sourceTree = "<group>";
 		};
 		84B132C2256927FB001B403B = {
@@ -334,6 +344,7 @@
 		84B1336E2569417A001B403B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				84546A98257057A200845CEB /* Loaders */,
 				84B1336F25694180001B403B /* Managers */,
 				84B1337025694192001B403B /* RegisterFormVIewModel.swift */,
 				84B13425256AD937001B403B /* PhotosViewModel.swift */,
@@ -363,7 +374,6 @@
 			isa = PBXGroup;
 			children = (
 				84B1342A256AEE20001B403B /* Images */,
-				84B133C5256A79E1001B403B /* ListElements */,
 				84B133812569468B001B403B /* TextFields */,
 			);
 			path = Elements;
@@ -425,13 +435,6 @@
 				84B133B8256A5BC0001B403B /* JsonCoder.swift */,
 			);
 			path = Coders;
-			sourceTree = "<group>";
-		};
-		84B133C5256A79E1001B403B /* ListElements */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ListElements;
 			sourceTree = "<group>";
 		};
 		84B133F7256A85E8001B403B /* Controllers */ = {
@@ -665,6 +668,7 @@
 				84B13376256941A8001B403B /* FormManager.swift in Sources */,
 				84B1334525693B4E001B403B /* RegisterFormFields.swift in Sources */,
 				84B1331A25692FF6001B403B /* Messages.swift in Sources */,
+				84546A9A257057C500845CEB /* ImageLoader.swift in Sources */,
 				84B1330D25692DC7001B403B /* Placeholders.swift in Sources */,
 				84B1336425693E97001B403B /* FormModel.swift in Sources */,
 				84B1335825693C98001B403B /* Regex.swift in Sources */,

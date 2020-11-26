@@ -3,12 +3,12 @@ import SwiftUI
 import Combine
 
 struct RemoteImageView: View {
-    @ObservedObject var remoteImageUrl: RemoteImageURL
+    @ObservedObject var remoteImageUrl: ImageLoader
     
     private let imageSide: CGFloat = 50
     
     init(_ imageUrl: String) {
-        self.remoteImageUrl = RemoteImageURL(imageURL: imageUrl)
+        self.remoteImageUrl = ImageLoader(imageUrl)
     }
     
     var body: some View {
