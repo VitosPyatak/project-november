@@ -4,11 +4,11 @@ enum TextFieldPlaceholder {
     static let firstName = "Enter first name"
 }
 
-struct ButtonPlacehoder {
-    static let SHOW_NAME = "Show name"
-    static let CREATE_USER = "Create user"
+enum ButtonPlacehoder {
+    static let showName = "Show name"
+    static let createUser = "Create user"
 }
 
-struct NavigationTitles {
-    static let CREATE_USER = "Create user"
+enum NavigationTitles {
+    static let createUser = "Create user"
 }

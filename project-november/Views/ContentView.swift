@@ -11,10 +11,10 @@ struct ContentView: View {
                 }
                 
                 Button(action: onCreateButtonPressed) {
-                    Text(ButtonPlacehoder.CREATE_USER)
+                    Text(ButtonPlacehoder.createUser)
                 }
             }
-            .navigationTitle(NavigationTitles.CREATE_USER)
+            .navigationTitle(NavigationTitles.createUser)
         }
     }
     
