@@ -13,7 +13,7 @@ struct UsersListView: View {
                     }
                 }
             } else {
-                Text(ErrorMessages.NO_USERS)
+                Text(ErrorMessages.noUsers)
             }
         }
         .onAppear(perform: fetchUsers)
