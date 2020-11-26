@@ -1,31 +1,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var firstNameInput = Strings.empty
-    @State private var currentDisplayContent = Strings.empty
+    @ObservedObject var viewModel = RegisterFormViewModel()
     
     var body: some View {
-        VStack {
-            HStack {
-                TextField(TextFieldPlaceholder.firstName, text: $firstNameInput)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
+        NavigationView {
+            Form {
+                ForEach(viewModel.fields.indices) { fieldIndex in
+                    FormTextField(getTextFieldBinding(by: fieldIndex))
+                }
                 
-                Button(action: onButtonPressed) {
-                    Text(ButtonPlacehoder.showName)
-                }.buttonStyle(RoundedColoredButtonStyle())
+                Button(action: onCreateButtonPressed) {
+                    Text(ButtonPlacehoder.createUser)
+                }
             }
-            
-            Text(getDisplayMessage())
-            
-        }.padding()
+            .navigationTitle(NavigationTitles.createUser)
+        }
     }
     
-    private func onButtonPressed() {
-        currentDisplayContent = firstNameInput
+    private func onCreateButtonPressed() {
+        viewModel.validateFields()
     }
     
-    private func getDisplayMessage() -> String {
-        currentDisplayContent.isEmpty ? ErrorMessages.noFirstName : currentDisplayContent
+    private func getTextFieldBinding(by index: Int) -> Binding<TextFieldInput> {
+        $viewModel.fields[index]
     }
 }
 

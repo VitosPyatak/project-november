@@ -21,6 +21,19 @@
 		84B1331A25692FF6001B403B /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1331925692FF6001B403B /* Messages.swift */; };
 		84B13320256931DB001B403B /* RoundedColoredButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1331F256931DB001B403B /* RoundedColoredButtonStyle.swift */; };
 		84B133282569356D001B403B /* RoundedTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B133272569356D001B403B /* RoundedTextFieldStyle.swift */; };
+		84B1333325693A79001B403B /* FormFieldId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1333225693A79001B403B /* FormFieldId.swift */; };
+		84B1333B25693ACE001B403B /* FormConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1333A25693ACE001B403B /* FormConfig.swift */; };
+		84B1334525693B4E001B403B /* RegisterFormFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1334425693B4E001B403B /* RegisterFormFields.swift */; };
+		84B1334E25693C26001B403B /* SystemIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1334D25693C26001B403B /* SystemIcons.swift */; };
+		84B1335325693C4C001B403B /* KeyboardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1335225693C4C001B403B /* KeyboardTypes.swift */; };
+		84B1335825693C98001B403B /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1335725693C98001B403B /* Regex.swift */; };
+		84B1335F25693E24001B403B /* TextFieldInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1335E25693E24001B403B /* TextFieldInput.swift */; };
+		84B1336425693E97001B403B /* FormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1336325693E97001B403B /* FormModel.swift */; };
+		84B1336A25693EBD001B403B /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1336925693EBD001B403B /* Validation.swift */; };
+		84B1337125694192001B403B /* RegisterFormVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1337025694192001B403B /* RegisterFormVIewModel.swift */; };
+		84B13376256941A8001B403B /* FormManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B13375256941A8001B403B /* FormManager.swift */; };
+		84B1337C25694554001B403B /* RegisterFormManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1337B25694554001B403B /* RegisterFormManager.swift */; };
+		84B133832569469C001B403B /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B133822569469C001B403B /* FormTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +74,19 @@
 		84B1331925692FF6001B403B /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		84B1331F256931DB001B403B /* RoundedColoredButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedColoredButtonStyle.swift; sourceTree = "<group>"; };
 		84B133272569356D001B403B /* RoundedTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextFieldStyle.swift; sourceTree = "<group>"; };
+		84B1333225693A79001B403B /* FormFieldId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFieldId.swift; sourceTree = "<group>"; };
+		84B1333A25693ACE001B403B /* FormConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormConfig.swift; sourceTree = "<group>"; };
+		84B1334425693B4E001B403B /* RegisterFormFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormFields.swift; sourceTree = "<group>"; };
+		84B1334D25693C26001B403B /* SystemIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemIcons.swift; sourceTree = "<group>"; };
+		84B1335225693C4C001B403B /* KeyboardTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTypes.swift; sourceTree = "<group>"; };
+		84B1335725693C98001B403B /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		84B1335E25693E24001B403B /* TextFieldInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldInput.swift; sourceTree = "<group>"; };
+		84B1336325693E97001B403B /* FormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModel.swift; sourceTree = "<group>"; };
+		84B1336925693EBD001B403B /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		84B1337025694192001B403B /* RegisterFormVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormVIewModel.swift; sourceTree = "<group>"; };
+		84B13375256941A8001B403B /* FormManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormManager.swift; sourceTree = "<group>"; };
+		84B1337B25694554001B403B /* RegisterFormManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormManager.swift; sourceTree = "<group>"; };
+		84B133822569469C001B403B /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +137,9 @@
 		84B132CD256927FB001B403B /* project-november */ = {
 			isa = PBXGroup;
 			children = (
+				84B1336E2569417A001B403B /* ViewModels */,
+				84B1336825693EAB001B403B /* Services */,
+				84B1335C25693D87001B403B /* Models */,
 				84B1330B25692DB5001B403B /* Config */,
 				84B1330A25692DAF001B403B /* Constants */,
 				84B1330625692CDD001B403B /* UI */,
@@ -171,6 +200,8 @@
 		84B1330625692CDD001B403B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				84B1338025694683001B403B /* Elements */,
+				84B1335D25693D9C001B403B /* Models */,
 				84B1331E256931BE001B403B /* Styles */,
 			);
 			path = UI;
@@ -189,6 +220,10 @@
 		84B1330B25692DB5001B403B /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				84B1334C25693C17001B403B /* GeneralConfigs */,
+				84B1334225693B30001B403B /* FormConfigs */,
+				84B1333225693A79001B403B /* FormFieldId.swift */,
+				84B1333A25693ACE001B403B /* FormConfig.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -200,6 +235,90 @@
 				84B133272569356D001B403B /* RoundedTextFieldStyle.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		84B1334225693B30001B403B /* FormConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				84B1334425693B4E001B403B /* RegisterFormFields.swift */,
+				84B1335225693C4C001B403B /* KeyboardTypes.swift */,
+			);
+			path = FormConfigs;
+			sourceTree = "<group>";
+		};
+		84B1334C25693C17001B403B /* GeneralConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				84B1334D25693C26001B403B /* SystemIcons.swift */,
+				84B1335725693C98001B403B /* Regex.swift */,
+			);
+			path = GeneralConfigs;
+			sourceTree = "<group>";
+		};
+		84B1335C25693D87001B403B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84B1336325693E97001B403B /* FormModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84B1335D25693D9C001B403B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84B1335E25693E24001B403B /* TextFieldInput.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84B1336825693EAB001B403B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84B1336925693EBD001B403B /* Validation.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84B1336E2569417A001B403B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				84B1336F25694180001B403B /* Managers */,
+				84B1337025694192001B403B /* RegisterFormVIewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		84B1336F25694180001B403B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				84B1337A25694541001B403B /* Impl */,
+				84B13375256941A8001B403B /* FormManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		84B1337A25694541001B403B /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				84B1337B25694554001B403B /* RegisterFormManager.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		84B1338025694683001B403B /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				84B133812569468B001B403B /* TextFields */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		84B133812569468B001B403B /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				84B133822569469C001B403B /* FormTextField.swift */,
+			);
+			path = TextFields;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,12 +454,25 @@
 				84B13320256931DB001B403B /* RoundedColoredButtonStyle.swift in Sources */,
 				84B132CF256927FB001B403B /* AppDelegate.swift in Sources */,
 				84B133282569356D001B403B /* RoundedTextFieldStyle.swift in Sources */,
+				84B1337125694192001B403B /* RegisterFormVIewModel.swift in Sources */,
 				84B132D6256927FB001B403B /* project_november.xcdatamodeld in Sources */,
+				84B1336A25693EBD001B403B /* Validation.swift in Sources */,
+				84B1334E25693C26001B403B /* SystemIcons.swift in Sources */,
+				84B1333B25693ACE001B403B /* FormConfig.swift in Sources */,
 				84B1331525692E3B001B403B /* StringConstants.swift in Sources */,
+				84B1333325693A79001B403B /* FormFieldId.swift in Sources */,
+				84B1337C25694554001B403B /* RegisterFormManager.swift in Sources */,
+				84B1335F25693E24001B403B /* TextFieldInput.swift in Sources */,
+				84B13376256941A8001B403B /* FormManager.swift in Sources */,
+				84B1334525693B4E001B403B /* RegisterFormFields.swift in Sources */,
 				84B1331A25692FF6001B403B /* Messages.swift in Sources */,
 				84B1330D25692DC7001B403B /* Placeholders.swift in Sources */,
+				84B1336425693E97001B403B /* FormModel.swift in Sources */,
+				84B1335825693C98001B403B /* Regex.swift in Sources */,
 				84B132D1256927FB001B403B /* SceneDelegate.swift in Sources */,
+				84B1335325693C4C001B403B /* KeyboardTypes.swift in Sources */,
 				84B132D3256927FB001B403B /* ContentView.swift in Sources */,
+				84B133832569469C001B403B /* FormTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
