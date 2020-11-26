@@ -1,17 +1,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var firstNameInput = EMPTY_STRING
-    @State private var currentDisplayContent = EMPTY_STRING
+    @State private var firstNameInput = Strings.empty
+    @State private var currentDisplayContent = Strings.empty
     
     var body: some View {
         VStack {
             HStack {
-                TextField(TextFieldPlaceholder.FIST_NAME, text: $firstNameInput)
+                TextField(TextFieldPlaceholder.firstName, text: $firstNameInput)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
                 Button(action: onButtonPressed) {
-                    Text(ButtonPlacehoder.SHOW_NAME)
+                    Text(ButtonPlacehoder.showName)
                 }.buttonStyle(RoundedColoredButtonStyle())
             }
             
@@ -25,11 +25,7 @@ struct ContentView: View {
     }
     
     private func getDisplayMessage() -> String {
-        currentDisplayContent.isEmpty ? ErrorMessages.NO_FIRST_NAME : currentDisplayContent
-    }
-    
-    private func test() {
-        print("test")
+        currentDisplayContent.isEmpty ? ErrorMessages.noFirstName : currentDisplayContent
     }
 }
 
