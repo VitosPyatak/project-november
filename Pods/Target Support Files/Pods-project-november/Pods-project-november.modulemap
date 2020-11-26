@@ -1,6 +1,0 @@
-framework module Pods_project_november {
-  umbrella header "Pods-project-november-umbrella.h"
-
-  export *
-  module * { export * }
-}
