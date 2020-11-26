@@ -16,7 +16,7 @@ struct ContentView: View {
                 
                 NavigationLink(destination: UsersListView()) {
                     Button(action: {}) {
-                        Text(ButtonPlacehoder.USERS_LIST)
+                        Text(ButtonPlacehoder.usersList)
                     }
                 }
             }
