@@ -11,7 +11,7 @@ struct ContentView: View {
                 }
                 
                 Button(action: onCreateButtonPressed) {
-                    Text(ButtonPlacehoder.CREATE_USER)
+                    Text(ButtonPlacehoder.createUser)
                 }
                 
                 NavigationLink(destination: UsersListView()) {
@@ -20,7 +20,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle(NavigationTitles.CREATE_USER)
+            .navigationTitle(NavigationTitles.createUser)
         }
     }
     
