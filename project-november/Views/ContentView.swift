@@ -27,6 +27,10 @@ struct ContentView: View {
     private func getDisplayMessage() -> String {
         currentDisplayContent.isEmpty ? ErrorMessages.NO_FIRST_NAME : currentDisplayContent
     }
+    
+    private func test() {
+        print("test")
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
