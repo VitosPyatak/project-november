@@ -16,6 +16,11 @@
 		84B132DE256927FD001B403B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B132DC256927FD001B403B /* LaunchScreen.storyboard */; };
 		84B132E9256927FD001B403B /* project_novemberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132E8256927FD001B403B /* project_novemberTests.swift */; };
 		84B132F4256927FD001B403B /* project_novemberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132F3256927FD001B403B /* project_novemberUITests.swift */; };
+		84B1330D25692DC7001B403B /* Placeholders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1330C25692DC7001B403B /* Placeholders.swift */; };
+		84B1331525692E3B001B403B /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1331425692E3B001B403B /* StringConstants.swift */; };
+		84B1331A25692FF6001B403B /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1331925692FF6001B403B /* Messages.swift */; };
+		84B13320256931DB001B403B /* RoundedColoredButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1331F256931DB001B403B /* RoundedColoredButtonStyle.swift */; };
+		84B133282569356D001B403B /* RoundedTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B133272569356D001B403B /* RoundedTextFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		84B132EF256927FD001B403B /* project-novemberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "project-novemberUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B132F3256927FD001B403B /* project_novemberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_novemberUITests.swift; sourceTree = "<group>"; };
 		84B132F5256927FD001B403B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B1330C25692DC7001B403B /* Placeholders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholders.swift; sourceTree = "<group>"; };
+		84B1331425692E3B001B403B /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		84B1331925692FF6001B403B /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		84B1331F256931DB001B403B /* RoundedColoredButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedColoredButtonStyle.swift; sourceTree = "<group>"; };
+		84B133272569356D001B403B /* RoundedTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextFieldStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +111,11 @@
 		84B132CD256927FB001B403B /* project-november */ = {
 			isa = PBXGroup;
 			children = (
-				84B132CE256927FB001B403B /* AppDelegate.swift */,
-				84B132D0256927FB001B403B /* SceneDelegate.swift */,
-				84B132D2256927FB001B403B /* ContentView.swift */,
+				84B1330B25692DB5001B403B /* Config */,
+				84B1330A25692DAF001B403B /* Constants */,
+				84B1330625692CDD001B403B /* UI */,
+				84B1330525692CCD001B403B /* Resources */,
+				84B1330425692CB5001B403B /* Views */,
 				84B132D7256927FD001B403B /* Assets.xcassets */,
 				84B132DC256927FD001B403B /* LaunchScreen.storyboard */,
 				84B132DF256927FD001B403B /* Info.plist */,
@@ -137,6 +149,57 @@
 				84B132F5256927FD001B403B /* Info.plist */,
 			);
 			path = "project-novemberUITests";
+			sourceTree = "<group>";
+		};
+		84B1330425692CB5001B403B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84B132D2256927FB001B403B /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84B1330525692CCD001B403B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84B132CE256927FB001B403B /* AppDelegate.swift */,
+				84B132D0256927FB001B403B /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84B1330625692CDD001B403B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				84B1331E256931BE001B403B /* Styles */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		84B1330A25692DAF001B403B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				84B1330C25692DC7001B403B /* Placeholders.swift */,
+				84B1331425692E3B001B403B /* StringConstants.swift */,
+				84B1331925692FF6001B403B /* Messages.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		84B1330B25692DB5001B403B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		84B1331E256931BE001B403B /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				84B1331F256931DB001B403B /* RoundedColoredButtonStyle.swift */,
+				84B133272569356D001B403B /* RoundedTextFieldStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,8 +332,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B13320256931DB001B403B /* RoundedColoredButtonStyle.swift in Sources */,
 				84B132CF256927FB001B403B /* AppDelegate.swift in Sources */,
+				84B133282569356D001B403B /* RoundedTextFieldStyle.swift in Sources */,
 				84B132D6256927FB001B403B /* project_november.xcdatamodeld in Sources */,
+				84B1331525692E3B001B403B /* StringConstants.swift in Sources */,
+				84B1331A25692FF6001B403B /* Messages.swift in Sources */,
+				84B1330D25692DC7001B403B /* Placeholders.swift in Sources */,
 				84B132D1256927FB001B403B /* SceneDelegate.swift in Sources */,
 				84B132D3256927FB001B403B /* ContentView.swift in Sources */,
 			);
