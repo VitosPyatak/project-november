@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1191EB65E0E7E12F2492720D /* Pods_project_november.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA3EB89D0B3DB1915E48485 /* Pods_project_november.framework */; };
+		2C72E8A9D85A64BC90B5BAC1 /* libPods-project-november.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0E1EB61FD788D6926E20F6 /* libPods-project-november.a */; };
 		84B132CF256927FB001B403B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132CE256927FB001B403B /* AppDelegate.swift */; };
 		84B132D1256927FB001B403B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132D0256927FB001B403B /* SceneDelegate.swift */; };
 		84B132D3256927FB001B403B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132D2256927FB001B403B /* ContentView.swift */; };
@@ -117,8 +117,8 @@
 		84B13425256AD937001B403B /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
 		84B1342B256AEE6C001B403B /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		84B13430256AF10E001B403B /* RemoteImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageURL.swift; sourceTree = "<group>"; };
-		DBA3EB89D0B3DB1915E48485 /* Pods_project_november.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_project_november.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06197A5A9FF4EFB6D684EA5 /* Pods-project-november.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project-november.debug.xcconfig"; path = "Target Support Files/Pods-project-november/Pods-project-november.debug.xcconfig"; sourceTree = "<group>"; };
+		FA0E1EB61FD788D6926E20F6 /* libPods-project-november.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-project-november.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1191EB65E0E7E12F2492720D /* Pods_project_november.framework in Frameworks */,
+				2C72E8A9D85A64BC90B5BAC1 /* libPods-project-november.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +150,7 @@
 		1E3ACFDC345DA05FED07BEC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DBA3EB89D0B3DB1915E48485 /* Pods_project_november.framework */,
+				FA0E1EB61FD788D6926E20F6 /* libPods-project-november.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -494,7 +494,6 @@
 				84B132C7256927FB001B403B /* Sources */,
 				84B132C8256927FB001B403B /* Frameworks */,
 				84B132C9256927FB001B403B /* Resources */,
-				AF1E14966D349A9F119FFDF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -611,23 +610,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AF1E14966D349A9F119FFDF3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-project-november/Pods-project-november-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-project-november/Pods-project-november-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-project-november/Pods-project-november-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C15A41BCD785731571EF3DA4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

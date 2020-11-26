@@ -7,7 +7,7 @@ struct PhotosView: View {
     var body: some View {
         HStack {
             if viewModel.photos.isEmpty {
-                Text(ErrorMessages.NO_PHOTOS)
+                Text(ErrorMessages.noPhotos)
             } else {
                 List(viewModel.photos) { photo in
                     RemoteImageView(photo.url)

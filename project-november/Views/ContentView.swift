@@ -22,7 +22,7 @@ struct ContentView: View {
                 
                 NavigationLink(destination: PhotosView()) {
                     Button(action: {}) {
-                        Text(ButtonPlacehoder.PHOTOS_LIST)
+                        Text(ButtonPlacehoder.photosList)
                     }
                 }
             }
