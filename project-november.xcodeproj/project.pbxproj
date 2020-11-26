@@ -34,6 +34,12 @@
 		84B13376256941A8001B403B /* FormManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B13375256941A8001B403B /* FormManager.swift */; };
 		84B1337C25694554001B403B /* RegisterFormManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1337B25694554001B403B /* RegisterFormManager.swift */; };
 		84B133832569469C001B403B /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B133822569469C001B403B /* FormTextField.swift */; };
+		84B13392256A54C0001B403B /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B13391256A54C0001B403B /* UserEntity.swift */; };
+		84B13399256A5508001B403B /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B13398256A5508001B403B /* UserDefaults.swift */; };
+		84B133A0256A5625001B403B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1339F256A5625001B403B /* UserService.swift */; };
+		84B133A6256A56C0001B403B /* UserBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B133A5256A56C0001B403B /* UserBuilder.swift */; };
+		84B133B9256A5BC0001B403B /* JsonCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B133B8256A5BC0001B403B /* JsonCoder.swift */; };
+		84B133BE256A6B27001B403B /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B133BD256A6B27001B403B /* UsersListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +93,12 @@
 		84B13375256941A8001B403B /* FormManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormManager.swift; sourceTree = "<group>"; };
 		84B1337B25694554001B403B /* RegisterFormManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormManager.swift; sourceTree = "<group>"; };
 		84B133822569469C001B403B /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		84B13391256A54C0001B403B /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		84B13398256A5508001B403B /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		84B1339F256A5625001B403B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		84B133A5256A56C0001B403B /* UserBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBuilder.swift; sourceTree = "<group>"; };
+		84B133B8256A5BC0001B403B /* JsonCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonCoder.swift; sourceTree = "<group>"; };
+		84B133BD256A6B27001B403B /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +149,7 @@
 		84B132CD256927FB001B403B /* project-november */ = {
 			isa = PBXGroup;
 			children = (
+				84B13390256A54AD001B403B /* Entities */,
 				84B1336E2569417A001B403B /* ViewModels */,
 				84B1336825693EAB001B403B /* Services */,
 				84B1335C25693D87001B403B /* Models */,
@@ -184,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				84B132D2256927FB001B403B /* ContentView.swift */,
+				84B133BD256A6B27001B403B /* UsersListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,7 +288,11 @@
 		84B1336825693EAB001B403B /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				84B1336925693EBD001B403B /* Validation.swift */,
+				84B133B7256A5BAB001B403B /* Coders */,
+				84B133A4256A56B3001B403B /* Builders */,
+				84B1339E256A5618001B403B /* Entities */,
+				84B1339D256A5609001B403B /* Validation */,
+				84B13397256A54EF001B403B /* Repositories */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -308,6 +326,7 @@
 		84B1338025694683001B403B /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				84B133C5256A79E1001B403B /* ListElements */,
 				84B133812569468B001B403B /* TextFields */,
 			);
 			path = Elements;
@@ -319,6 +338,61 @@
 				84B133822569469C001B403B /* FormTextField.swift */,
 			);
 			path = TextFields;
+			sourceTree = "<group>";
+		};
+		84B13390256A54AD001B403B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				84B13391256A54C0001B403B /* UserEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		84B13397256A54EF001B403B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				84B13398256A5508001B403B /* UserDefaults.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		84B1339D256A5609001B403B /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				84B1336925693EBD001B403B /* Validation.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		84B1339E256A5618001B403B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				84B1339F256A5625001B403B /* UserService.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		84B133A4256A56B3001B403B /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				84B133A5256A56C0001B403B /* UserBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		84B133B7256A5BAB001B403B /* Coders */ = {
+			isa = PBXGroup;
+			children = (
+				84B133B8256A5BC0001B403B /* JsonCoder.swift */,
+			);
+			path = Coders;
+			sourceTree = "<group>";
+		};
+		84B133C5256A79E1001B403B /* ListElements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ListElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,8 +526,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B13320256931DB001B403B /* RoundedColoredButtonStyle.swift in Sources */,
+				84B133A0256A5625001B403B /* UserService.swift in Sources */,
 				84B132CF256927FB001B403B /* AppDelegate.swift in Sources */,
 				84B133282569356D001B403B /* RoundedTextFieldStyle.swift in Sources */,
+				84B133BE256A6B27001B403B /* UsersListView.swift in Sources */,
+				84B13392256A54C0001B403B /* UserEntity.swift in Sources */,
 				84B1337125694192001B403B /* RegisterFormVIewModel.swift in Sources */,
 				84B132D6256927FB001B403B /* project_november.xcdatamodeld in Sources */,
 				84B1336A25693EBD001B403B /* Validation.swift in Sources */,
@@ -461,6 +538,7 @@
 				84B1333B25693ACE001B403B /* FormConfig.swift in Sources */,
 				84B1331525692E3B001B403B /* StringConstants.swift in Sources */,
 				84B1333325693A79001B403B /* FormFieldId.swift in Sources */,
+				84B133A6256A56C0001B403B /* UserBuilder.swift in Sources */,
 				84B1337C25694554001B403B /* RegisterFormManager.swift in Sources */,
 				84B1335F25693E24001B403B /* TextFieldInput.swift in Sources */,
 				84B13376256941A8001B403B /* FormManager.swift in Sources */,
@@ -470,9 +548,11 @@
 				84B1336425693E97001B403B /* FormModel.swift in Sources */,
 				84B1335825693C98001B403B /* Regex.swift in Sources */,
 				84B132D1256927FB001B403B /* SceneDelegate.swift in Sources */,
+				84B13399256A5508001B403B /* UserDefaults.swift in Sources */,
 				84B1335325693C4C001B403B /* KeyboardTypes.swift in Sources */,
 				84B132D3256927FB001B403B /* ContentView.swift in Sources */,
 				84B133832569469C001B403B /* FormTextField.swift in Sources */,
+				84B133B9256A5BC0001B403B /* JsonCoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,12 @@ struct ContentView: View {
                 Button(action: onCreateButtonPressed) {
                     Text(ButtonPlacehoder.createUser)
                 }
+                
+                NavigationLink(destination: UsersListView()) {
+                    Button(action: {}) {
+                        Text(ButtonPlacehoder.usersList)
+                    }
+                }
             }
             .navigationTitle(NavigationTitles.createUser)
         }
@@ -20,7 +26,11 @@ struct ContentView: View {
     
     private func onCreateButtonPressed() {
         viewModel.validateFields()
+        if viewModel.areAllFieldsValid() {
+            UserService.save(from: viewModel.fields)
+        }
     }
+    
     
     private func getTextFieldBinding(by index: Int) -> Binding<TextFieldInput> {
         $viewModel.fields[index]

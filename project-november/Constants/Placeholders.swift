@@ -7,6 +7,7 @@ enum TextFieldPlaceholder {
 enum ButtonPlacehoder {
     static let showName = "Show name"
     static let createUser = "Create user"
+    static let usersList = "List users"
 }
 
 enum NavigationTitles {
