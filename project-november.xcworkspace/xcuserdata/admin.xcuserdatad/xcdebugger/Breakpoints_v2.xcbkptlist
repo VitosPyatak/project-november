@@ -95,9 +95,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "fetchPhotos()"
-            landmarkType = "7">
+            endingLineNumber = "34">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -111,9 +109,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "startUpdate()"
-            landmarkType = "7">
+            endingLineNumber = "40">
             <Locations>
                <Location
                   uuid = "D66A3357-5FCF-43C9-8C02-36B5472449C0 - 3d76b61d5cbbc9a1"
@@ -159,9 +155,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "startUpdate()"
-            landmarkType = "7">
+            endingLineNumber = "41">
             <Locations>
                <Location
                   uuid = "52A6CA9A-97CD-4644-978F-5A40FEDA738C - 700e0c494af52a48"
@@ -207,9 +201,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "startUpdate()"
-            landmarkType = "7">
+            endingLineNumber = "42">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
