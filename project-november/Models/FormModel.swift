@@ -13,7 +13,7 @@ struct FormModel<GenericForm> where GenericForm: FormManager {
     }
     
     func getField(by id: FormFieldId) -> TextFieldInput {
-        formFields.first(where: { field in field.id == id})!
+        formFields.first(where: { field in field.fieldId == id})!
     }
     
     func getField(by index: Int) -> TextFieldInput {
@@ -45,7 +45,7 @@ struct FormModel<GenericForm> where GenericForm: FormManager {
         let passwords = getPasswordFields()
         if !ValidationService.validateValuesMatching(of: passwords) {
             for (index, field) in formFields.enumerated() {
-                if formFields[index].id == .passwordConfirmation {
+                if formFields[index].fieldId == .passwordConfirmation {
                     modifyFieldOnInvalidInput(field, by: index)
                 }
             }
@@ -53,7 +53,7 @@ struct FormModel<GenericForm> where GenericForm: FormManager {
     }
     
     private mutating func processFormField(formField: TextFieldInput, index: Int) {
-        if ValidationService.validate(formField.input, by: formField.id) {
+        if ValidationService.validate(formField.input, by: formField.fieldId) {
             modifyFieldOnSuccessfullValidation(formField, by: index)
         } else {
             modifyFieldOnInvalidInput(formField, by: index)
@@ -61,21 +61,21 @@ struct FormModel<GenericForm> where GenericForm: FormManager {
     }
     
     private mutating func modifyFieldOnSuccessfullValidation(_ field: TextFieldInput, by index: Int) {
-        let sectionLabel = formManager.getSuccessMessage(by: field.id)
+        let sectionLabel = formManager.getSuccessMessage(by: field.fieldId)
         formFields[index].label = sectionLabel
         formFields[index].isValid = true
         formFields[index].isValidated = true
     }
     
     private mutating func modifyFieldOnInvalidInput(_ field: TextFieldInput, by index: Int) {
-        let errorMessage = formManager.getErrorMessage(by: field.id)
+        let errorMessage = formManager.getErrorMessage(by: field.fieldId)
         formFields[index].label = errorMessage
         formFields[index].isValid = false
         formFields[index].isValidated = true
     }
     
     private func getPasswordFields() -> [TextFieldInput] {
-        formFields.filter({ field in field.id == .password || field.id == .passwordConfirmation })
+        formFields.filter({ field in field.fieldId == .password || field.fieldId == .passwordConfirmation })
     }
     
     private func areAllFieldsValid() -> Bool {

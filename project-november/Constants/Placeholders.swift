@@ -13,4 +13,5 @@ enum ButtonPlacehoder {
 
 enum NavigationTitles {
     static let createUser = "Create user"
+    static let photosList = "Photos List"
 }
