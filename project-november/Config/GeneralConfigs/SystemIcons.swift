@@ -7,6 +7,8 @@ struct SystemIcons {
         case confirmation
         case reject
         case refresh
+        case star
+        case starFill
     }
     
     private static let icons: [SysIcon : String] = [
@@ -14,7 +16,9 @@ struct SystemIcons {
         .pencil: "pencil.tip.crop.circle",
         .confirmation: "checkmark.icloud.fill",
         .reject: "exclamationmark.icloud.fill",
-        .refresh: "arrow.clockwise.icloud"
+        .refresh: "arrow.clockwise.icloud",
+        .star: "star",
+        .starFill: "star.fill"
     ]
     
     static func get(_ id: SysIcon) -> String {

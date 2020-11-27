@@ -14,6 +14,8 @@
 		84546AC325711D2B00845CEB /* JPApiParametersBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84546AC225711D2B00845CEB /* JPApiParametersBuilder.swift */; };
 		84546ACB25711FFD00845CEB /* AlbumEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84546ACA25711FFD00845CEB /* AlbumEntity.swift */; };
 		84546AD92571225100845CEB /* AlbumDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84546AD82571225100845CEB /* AlbumDetailsViewModel.swift */; };
+		84546ADF257134EC00845CEB /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84546ADE257134EC00845CEB /* NavigationService.swift */; };
+		84546AE82571391A00845CEB /* StarredService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84546AE72571391A00845CEB /* StarredService.swift */; };
 		84B132CF256927FB001B403B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132CE256927FB001B403B /* AppDelegate.swift */; };
 		84B132D1256927FB001B403B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132D0256927FB001B403B /* SceneDelegate.swift */; };
 		84B132D3256927FB001B403B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132D2256927FB001B403B /* ContentView.swift */; };
@@ -82,6 +84,8 @@
 		84546AC225711D2B00845CEB /* JPApiParametersBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPApiParametersBuilder.swift; sourceTree = "<group>"; };
 		84546ACA25711FFD00845CEB /* AlbumEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumEntity.swift; sourceTree = "<group>"; };
 		84546AD82571225100845CEB /* AlbumDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewModel.swift; sourceTree = "<group>"; };
+		84546ADE257134EC00845CEB /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
+		84546AE72571391A00845CEB /* StarredService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarredService.swift; sourceTree = "<group>"; };
 		84B132CB256927FB001B403B /* project-november.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project-november.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B132CE256927FB001B403B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B132D0256927FB001B403B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +194,15 @@
 				84546ABD2570F76F00845CEB /* PhotoDetailsView.swift */,
 			);
 			path = Photos;
+			sourceTree = "<group>";
+		};
+		84546AE6257138EA00845CEB /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				84546ADE257134EC00845CEB /* NavigationService.swift */,
+				84546AE72571391A00845CEB /* StarredService.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 		84B132C2256927FB001B403B = {
@@ -359,6 +372,7 @@
 		84B1336825693EAB001B403B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				84546AE6257138EA00845CEB /* Persistence */,
 				84B133F7256A85E8001B403B /* Controllers */,
 				84B133B7256A5BAB001B403B /* Coders */,
 				84B133A4256A56B3001B403B /* Builders */,
@@ -697,6 +711,7 @@
 				84B1333325693A79001B403B /* FormFieldId.swift in Sources */,
 				84B133A6256A56C0001B403B /* UserBuilder.swift in Sources */,
 				84B1337C25694554001B403B /* RegisterFormManager.swift in Sources */,
+				84546ADF257134EC00845CEB /* NavigationService.swift in Sources */,
 				84B1335F25693E24001B403B /* TextFieldInput.swift in Sources */,
 				84B133FF256A890F001B403B /* PhotosView.swift in Sources */,
 				84546AB82570F27B00845CEB /* AnimationLoader.swift in Sources */,
@@ -705,6 +720,7 @@
 				84B1331A25692FF6001B403B /* Messages.swift in Sources */,
 				84546A9A257057C500845CEB /* ImageLoader.swift in Sources */,
 				84B1330D25692DC7001B403B /* Placeholders.swift in Sources */,
+				84546AE82571391A00845CEB /* StarredService.swift in Sources */,
 				84B1336425693E97001B403B /* FormModel.swift in Sources */,
 				84B1335825693C98001B403B /* Regex.swift in Sources */,
 				84546ABE2570F76F00845CEB /* PhotoDetailsView.swift in Sources */,

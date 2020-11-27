@@ -3,6 +3,8 @@ import SwiftUI
 
 struct PhotosView: View {
     @ObservedObject private var viewModel = PhotosViewModel()
+    @State private var starredPhotos = [PhotoEntity]()
+    @State private var starredPhotosMapping = [Int: PhotoEntity]()
     
     var body: some View {
         VStack {
@@ -10,14 +12,14 @@ struct PhotosView: View {
                 Text(ErrorMessages.noPhotos)
             } else {
                 List(viewModel.photos) { photo in
-                    NavigationLink(destination: PhotoDetailsView(photo)) {
+                    NavigationLink(destination: PhotoDetailsView(getFinalPhotoEntry(from: photo))) {
                         RemoteImageView(photo.url)
                         Text(photo.title)
                     }
                 }
             }
         }
-        .onAppear(perform: fetchPhotos)
+        .onAppear(perform: processPhotosLoading)
         .navigationBarTitle(NavigationTitles.photosList, displayMode: .inline)
         .navigationBarItems(trailing: getNavigationBarRefreshButton())
     }
@@ -28,7 +30,21 @@ struct PhotosView: View {
         }
     }
     
-    private func fetchPhotos() {
-        viewModel.loadPhotos()
+    private func processPhotosLoading() {
+        processStarredPhotos()
+        if NavigationService.doNeedToRefresh() {
+            viewModel.loadPhotos()
+        }
+    }
+    
+    private func getFinalPhotoEntry(from photo: PhotoEntity) -> PhotoEntity {
+        starredPhotosMapping[photo.id] ?? photo
+    }
+    
+    private func processStarredPhotos() {
+        starredPhotos = StarredService.getStarred()
+        starredPhotosMapping = starredPhotos.reduce(into: [Int : PhotoEntity]()) { dictionary, photo in
+            dictionary[photo.id] = photo
+        }
     }
 }
