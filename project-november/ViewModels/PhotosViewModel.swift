@@ -6,6 +6,10 @@ final class PhotosViewModel: ObservableObject {
     @Published var photos = [PhotoEntity]()
     @Published var starredPhotosMapping = [Int: PhotoEntity]()
     
+    var starredImages: [PhotoEntity] {
+        get { starredPhotosMapping.enumerated().map { _, entry in entry.value } }
+    }
+    
     private var loadedItems = 0
     private let loadingStep = 15
     

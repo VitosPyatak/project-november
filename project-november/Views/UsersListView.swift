@@ -17,6 +17,7 @@ struct UsersListView: View {
             }
         }
         .onAppear(perform: fetchUsers)
+        .navigationBarTitle(NavigationTitles.usersList)
     }
     
     private func fetchUsers() {

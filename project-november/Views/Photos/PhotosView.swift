@@ -10,10 +10,7 @@ struct PhotosView: View {
                 Text(ErrorMessages.noPhotos)
             } else {
                 List(viewModel.photos) { photo in
-                    NavigationLink(destination: PhotoDetailsView(getFinalPhotoEntry(from: photo))) {
-                        RemoteImageView(photo.url)
-                        Text(photo.title)
-                    }
+                    PhotoListItemView(getFinalPhotoEntry(from: photo))
                 }
             }
         }

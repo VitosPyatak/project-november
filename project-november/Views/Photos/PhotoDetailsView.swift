@@ -45,7 +45,7 @@ struct PhotoDetailsView: View {
     
     private func toggleIsStarred() {
         isStarred.toggle()
-        StarredService.updateStarred(with: photo, as: true)
+        StarredService.updateStarred(with: photo, as: isStarred)
     }
     
     private func loadDetails() {

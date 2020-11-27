@@ -62,8 +62,8 @@
             filePath = "project-november/ViewModels/PhotosViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "loadPhotos()"
             landmarkType = "7">
          </BreakpointContent>
@@ -264,8 +264,8 @@
             filePath = "project-november/ViewModels/PhotosViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "loadPhotos()"
             landmarkType = "7">
             <Locations>
@@ -312,8 +312,8 @@
             filePath = "project-november/Views/Photos/PhotosView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "processPhotosLoading()"
             landmarkType = "7">
          </BreakpointContent>
@@ -328,8 +328,8 @@
             filePath = "project-november/Views/Photos/PhotosView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "processPhotosLoading()"
             landmarkType = "7">
          </BreakpointContent>
@@ -392,8 +392,8 @@
             filePath = "project-november/ViewModels/PhotosViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "loadPhotos()"
             landmarkType = "7">
          </BreakpointContent>
@@ -408,8 +408,8 @@
             filePath = "project-november/ViewModels/PhotosViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "loadPhotos()"
             landmarkType = "7">
          </BreakpointContent>
@@ -668,6 +668,70 @@
             endingLineNumber = "13"
             landmarkName = "init(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8171B092-A366-48B3-8EDF-66B181473FDA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "project-november/Views/Photos/StarredPhotosView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "loadStarredPhotos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E94C63EB-6945-422C-A01C-B8BDC3D12CE9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "project-november/ViewModels/PhotosViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "loadStarredPhotos()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E94C63EB-6945-422C-A01C-B8BDC3D12CE9 - e0f180e2687ab2b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "project_november.PhotosViewModel.loadStarredPhotos() -&gt; ()"
+                  moduleName = "project-november"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/lpnu/mobile-labs/project-november/project-november/ViewModels/PhotosViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "E94C63EB-6945-422C-A01C-B8BDC3D12CE9 - a92e0ed0f49fc08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (inout Swift.Dictionary&lt;Swift.Int, project_november.PhotoEntity&gt;, project_november.PhotoEntity) -&gt; () in project_november.PhotosViewModel.loadStarredPhotos() -&gt; ()"
+                  moduleName = "project-november"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/lpnu/mobile-labs/project-november/project-november/ViewModels/PhotosViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "188">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
