@@ -4,7 +4,7 @@ import Foundation
 struct StarredService {
     private static let dataService = UserDefaultsService()
     
-    private static let starredKey = "#starredPhoto"
+    private static let starredKey = "#starredPhotos"
     
     static func getStarred() -> [PhotoEntity] {
         if let staredPhotoData = getStarredPhotosData() {

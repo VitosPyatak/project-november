@@ -3,8 +3,6 @@ import SwiftUI
 
 struct PhotosView: View {
     @ObservedObject private var viewModel = PhotosViewModel()
-    @State private var starredPhotos = [PhotoEntity]()
-    @State private var starredPhotosMapping = [Int: PhotoEntity]()
     
     var body: some View {
         VStack {
@@ -31,20 +29,13 @@ struct PhotosView: View {
     }
     
     private func processPhotosLoading() {
-        processStarredPhotos()
+        viewModel.loadStarredPhotos()
         if NavigationService.doNeedToRefresh() {
             viewModel.loadPhotos()
         }
     }
     
     private func getFinalPhotoEntry(from photo: PhotoEntity) -> PhotoEntity {
-        starredPhotosMapping[photo.id] ?? photo
-    }
-    
-    private func processStarredPhotos() {
-        starredPhotos = StarredService.getStarred()
-        starredPhotosMapping = starredPhotos.reduce(into: [Int : PhotoEntity]()) { dictionary, photo in
-            dictionary[photo.id] = photo
-        }
+        viewModel.starredPhotosMapping[photo.id] ?? photo
     }
 }
