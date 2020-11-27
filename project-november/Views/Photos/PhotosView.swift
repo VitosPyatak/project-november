@@ -4,13 +4,13 @@ import SwiftUI
 struct PhotosView: View {
     @ObservedObject private var viewModel = PhotosViewModel()
     
-    var body: some View {        
-        NavigationView {
-            HStack {
-                if viewModel.photos.isEmpty {
-                    Text(ErrorMessages.noPhotos)
-                } else {
-                    List(viewModel.photos) { photo in
+    var body: some View {
+        VStack {
+            if viewModel.photos.isEmpty {
+                Text(ErrorMessages.noPhotos)
+            } else {
+                List(viewModel.photos) { photo in
+                    NavigationLink(destination: PhotoDetailsView(photo)) {
                         RemoteImageView(photo.url)
                         Text(photo.title)
                     }
@@ -18,7 +18,7 @@ struct PhotosView: View {
             }
         }
         .onAppear(perform: fetchPhotos)
-        .navigationBarTitle(NavigationTitles.photosList)
+        .navigationBarTitle(NavigationTitles.photosList, displayMode: .inline)
         .navigationBarItems(trailing: getNavigationBarRefreshButton())
     }
     
