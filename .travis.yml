@@ -1,4 +1,4 @@
 language: swift
-xcode_project: project-november.xcworkspace
+xcode_project: project-november.xcodeproj
 xcode_scheme: project-november
 xcode_destination: platform=iOS Simulator,OS=14.0,name=iPhone SE (2nd generation)
