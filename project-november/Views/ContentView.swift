@@ -4,42 +4,33 @@ struct ContentView: View {
     @ObservedObject var viewModel = RegisterFormViewModel()
     
     var body: some View {
-        NavigationView {
-            Form {
-                ForEach(viewModel.fields.indices) { fieldIndex in
-                    FormTextField(getTextFieldBinding(by: fieldIndex))
-                }
-                
-                Button(action: onCreateButtonPressed) {
-                    Text(ButtonPlacehoder.createUser)
-                }
-                
-                NavigationLink(destination: UsersListView()) {
-                    Button(action: {}) {
-                        Text(ButtonPlacehoder.usersList)
-                    }
-                }
-                
-                NavigationLink(destination: PhotosView()) {
-                    Button(action: {}) {
-                        Text(ButtonPlacehoder.photosList)
-                    }
-                }
+        TabView {
+            NavigationView {
+                RegisterView()
             }
-            .navigationTitle(NavigationTitles.createUser)
+            .tabItem { getViewTabItem(with: .personBadgePlus) }
+            
+            NavigationView {
+                UsersListView()
+            }
+            .tabItem { getViewTabItem(with: .personFill) }
+            
+            NavigationView {
+                PhotosView()
+            }
+            .tabItem { getViewTabItem(with: .photoListRecFill) }
+            
+            NavigationView {
+                StarredPhotosView()
+            }
+            .tabItem { getViewTabItem(with: .starFill) }
         }
     }
     
-    private func onCreateButtonPressed() {
-        viewModel.validateFields()
-        if viewModel.areAllFieldsValid() {
-            UserService.save(from: viewModel.fields)
+    private func getViewTabItem(with systemIconName: SysIcon) -> some View {
+        HStack {
+            Image(uiImage: UIImage(systemName: SystemIcons.get(systemIconName))!)
         }
-    }
-    
-    
-    private func getTextFieldBinding(by index: Int) -> Binding<TextFieldInput> {
-        $viewModel.fields[index]
     }
 }
 
