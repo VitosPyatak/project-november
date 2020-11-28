@@ -5,17 +5,29 @@ import Combine
 struct RemoteImageView: View {
     @ObservedObject var remoteImageUrl: ImageLoader
     
-    var imageSide: CGFloat
+    var imageSide: CGFloat?
     
-    private static let defaultImageSide: CGFloat = 50
-    
-    init(_ imageUrl: String, imageSide: CGFloat? = defaultImageSide) {
+    init(_ imageUrl: String) {
         self.remoteImageUrl = ImageLoader(imageUrl)
-        self.imageSide = imageSide!
+    }
+    
+    init(_ imageUrl: String, imageSide: CGFloat) {
+        self.remoteImageUrl = ImageLoader(imageUrl)
+        self.imageSide = imageSide
     }
     
     var body: some View {
-        HStack{
+        let viewBody = getBody()
+        
+        guard imageSide != nil else {
+            return AnyView(viewBody)
+        }
+        
+        return AnyView(viewBody.frame(width: imageSide, height: imageSide))
+    }
+    
+    private func getBody() -> some View {
+        HStack {
             if remoteImageUrl.imageData.isEmpty {
                 AnimationLoader(loaderStyle: .medium)
             } else {
@@ -23,7 +35,5 @@ struct RemoteImageView: View {
                     .resizable()
             }
         }
-        .aspectRatio(contentMode: .fit)
-        .frame(width: imageSide, height: imageSide)
     }
 }

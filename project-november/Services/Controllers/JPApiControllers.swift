@@ -9,7 +9,6 @@ struct PhotosController {
     
     static func get(skip: Int = defaultSkip, completion complete: @escaping ([PhotoEntity]?) -> Void) {
         let parameters = JPApiParametersBuilder.build(skip: skip, limit: fetchLimit)
-       print(requestUrl)
         AF.request(requestUrl, method: .get, parameters: parameters).responseDecodable(of: [PhotoEntity].self) { response in
             complete(response.value)
         }

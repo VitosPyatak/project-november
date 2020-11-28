@@ -15,7 +15,7 @@ struct PhotosView: View {
             }
         }
         .onAppear(perform: processPhotosLoading)
-        .navigationBarTitle(NavigationTitles.photosList, displayMode: .inline)
+        .navigationBarTitle(NavigationTitles.photosList)
         .navigationBarItems(trailing: getNavigationBarRefreshButton())
     }
     

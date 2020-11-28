@@ -17,8 +17,10 @@ struct PhotoDetailsView: View {
     var body: some View {
         VStack  {
             if let details = albumDetails.details {
-                RemoteImageView(photo.url, imageSide: imageSide)
-                    .cornerRadius(imageCornerRadius)
+                NavigationLink(destination: RemoteImageView(photo.url)) {
+                    RemoteImageView(photo.url, imageSide: imageSide)
+                        .cornerRadius(imageCornerRadius)
+                }
                 
                 Text(details.title).bold().font(.title)
                 
