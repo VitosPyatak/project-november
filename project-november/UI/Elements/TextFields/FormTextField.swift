@@ -62,7 +62,7 @@ struct FormTextField: View {
     }
 
     private func getTextFieldImage() -> String {
-        var iconImage: SystemIcons.SysIcon
+        var iconImage: SysIcon
         if textFieldEntry.isValidated.wrappedValue {
             iconImage = isInputValid() ? .confirmation : .reject
         } else {

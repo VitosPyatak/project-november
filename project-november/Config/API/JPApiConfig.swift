@@ -1,5 +1,7 @@
 import Foundation
 
-struct JPApiConfig {
-    static let BASE_URL = "https://jsonplaceholder.typicode.com"
+enum JPApiConfig {
+    static let baseUrl = "https://jsonplaceholder.typicode.com"
+    static let fetchLimit = 15
+    static let defaultSkip = 0
 }

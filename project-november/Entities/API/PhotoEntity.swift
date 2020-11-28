@@ -6,4 +6,5 @@ struct PhotoEntity: Codable, Hashable, Identifiable {
     let title: String
     let url: String
     let thumbnailUrl: String
+    var isStarred: Bool?
 }
