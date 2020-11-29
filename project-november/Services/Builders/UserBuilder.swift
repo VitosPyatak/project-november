@@ -12,17 +12,18 @@ struct UserBuilder {
     private static func buildProperty(with field: TextFieldInput, for user: inout UserEntity) {
         let fieldInputValue = field.input
         switch field.fieldId {
-            case .firstname:
-                user.firstName = fieldInputValue
-            case .lastname:
-                user.lastName = fieldInputValue
-            case .phoneNumber:
-                user.phoneNumber = fieldInputValue
-            case .email:
-                user.email = fieldInputValue
-            case .password:
-                user.password = fieldInputValue
-            default: return
+        case .firstname:
+            user.firstName = fieldInputValue
+        case .lastname:
+            user.lastName = fieldInputValue
+        case .phoneNumber:
+            user.phoneNumber = fieldInputValue
+        case .email:
+            user.email = fieldInputValue
+        case .password:
+            user.password = fieldInputValue
+        default:
+            return
         }
     }
 }

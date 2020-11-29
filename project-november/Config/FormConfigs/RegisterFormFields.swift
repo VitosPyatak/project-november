@@ -1,7 +1,7 @@
 import Foundation
 
 struct RegisterErrorMessages {
-    private static let messages: [FormFieldId : String] = [
+    private static let messages: [FormFieldId: String] = [
         .firstname: "Invalid first name",
         .lastname: "Invalid last name",
         .phoneNumber: "Invalid phone number",
@@ -16,7 +16,7 @@ struct RegisterErrorMessages {
 }
 
 struct RegisterLabels {
-    private static let messages: [FormFieldId : String] = [
+    private static let messages: [FormFieldId: String] = [
         .firstname: "First name",
         .lastname: "LastName",
         .phoneNumber: "Phone number",

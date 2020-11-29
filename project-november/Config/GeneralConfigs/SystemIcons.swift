@@ -16,7 +16,7 @@ enum SysIcon {
 
 struct SystemIcons {
     
-    private static let icons: [SysIcon : String] = [
+    private static let icons: [SysIcon: String] = [
         .message: "message",
         .pencil: "pencil.tip.crop.circle",
         .confirmation: "checkmark.icloud.fill",

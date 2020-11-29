@@ -1,7 +1,7 @@
 import Foundation
 
 struct InputRegex {
-    private static let regexMap: [FormFieldId : String] = [
+    private static let regexMap: [FormFieldId: String] = [
         .firstname: "^(([^ ]?)(^[a-zA-Z].*[a-zA-Z]$)([^ ]?))$",
         .lastname: "^(([^ ]?)(^[a-zA-Z].*[a-zA-Z]$)([^ ]?))$",
         .phoneNumber: "^\\d{10}$",
@@ -15,6 +15,6 @@ struct InputRegex {
     }
 }
 
-struct RegexFormats {
-    static let SELF_MATCHES = "SELF MATCHES %@"
+enum RegexFormats {
+    static let selfMatches = "SELF MATCHES %@"
 }

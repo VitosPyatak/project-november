@@ -58,9 +58,11 @@
 		84B13426256AD937001B403B /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B13425256AD937001B403B /* PhotosViewModel.swift */; };
 		84B1342C256AEE6C001B403B /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1342B256AEE6C001B403B /* RemoteImageView.swift */; };
 		84B13431256AF10E001B403B /* RemoteImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B13430256AF10E001B403B /* RemoteImageURL.swift */; };
+		9DD20A0219C265AF8F00F312 /* libPods-project-november.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E365444067E0B55E9B62577 /* libPods-project-november.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E365444067E0B55E9B62577 /* libPods-project-november.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-project-november.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6813B6CC184DEC37BA901B2B /* Pods-project-november.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project-november.release.xcconfig"; path = "Target Support Files/Pods-project-november/Pods-project-november.release.xcconfig"; sourceTree = "<group>"; };
 		84546A99257057C500845CEB /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		84546AB72570F27B00845CEB /* AnimationLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationLoader.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DD20A0219C265AF8F00F312 /* libPods-project-november.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +139,7 @@
 		1E3ACFDC345DA05FED07BEC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E365444067E0B55E9B62577 /* libPods-project-november.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -513,6 +517,7 @@
 				84B132C7256927FB001B403B /* Sources */,
 				84B132C8256927FB001B403B /* Frameworks */,
 				84B132C9256927FB001B403B /* Resources */,
+				84546B4A2573B9C400845CEB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -569,6 +574,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		84546B4A2573B9C400845CEB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		C15A41BCD785731571EF3DA4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
