@@ -7,7 +7,7 @@ final class PhotosViewModel: ObservableObject {
     @Published var starredPhotosMapping = [Int: PhotoEntity]()
     
     var starredImages: [PhotoEntity] {
-        get { starredPhotosMapping.enumerated().map { _, entry in entry.value } }
+        starredPhotosMapping.enumerated().map { _, entry in entry.value }
     }
     
     private var loadedItems = 0
@@ -27,7 +27,7 @@ final class PhotosViewModel: ObservableObject {
     
     func loadStarredPhotos() {
         let starredPhotos = StarredService.getStarred()
-        starredPhotosMapping = starredPhotos.reduce(into: [Int : PhotoEntity]()) { dictionary, photo in
+        starredPhotosMapping = starredPhotos.reduce(into: [Int: PhotoEntity]()) { dictionary, photo in
             dictionary[photo.id] = photo
         }
     }

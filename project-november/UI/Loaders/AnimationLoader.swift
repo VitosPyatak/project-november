@@ -3,7 +3,7 @@ import SwiftUI
 
 struct AnimationLoader: UIViewRepresentable {
     let loaderStyle: UIActivityIndicatorView.Style
-    
+
     func makeUIView(context: Context) -> some UIView {
         let indicator = UIActivityIndicatorView(style: loaderStyle)
         return indicator

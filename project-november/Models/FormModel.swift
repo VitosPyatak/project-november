@@ -44,11 +44,13 @@ struct FormModel<GenericForm> where GenericForm: FormManager {
     private mutating func processPasswordMatching() {
         let passwords = getPasswordFields()
         if !ValidationService.validateValuesMatching(of: passwords) {
-            for (index, field) in formFields.enumerated() {
-                if formFields[index].fieldId == .passwordConfirmation {
-                    modifyFieldOnInvalidInput(field, by: index)
-                }
-            }
+            processPasswordConfirmationField()
+        }
+    }
+    
+    private mutating func processPasswordConfirmationField() {
+        for (index, field) in formFields.enumerated() where formFields[index].fieldId == .passwordConfirmation {
+            modifyFieldOnInvalidInput(field, by: index)
         }
     }
     

@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 
 struct KeyboardTypes {
-    private static let keyboardTypes: [FormFieldId : UIKeyboardType] = [
+    private static let keyboardTypes: [FormFieldId: UIKeyboardType] = [
         .firstname: .default,
         .lastname: .default,
         .phoneNumber: .numberPad,

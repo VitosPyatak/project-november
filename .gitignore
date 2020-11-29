@@ -1,1 +1,4 @@
 Pods/
+build/
+*.xcarchive
+exportOptions.plist

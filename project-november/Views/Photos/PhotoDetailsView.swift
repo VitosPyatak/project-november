@@ -15,7 +15,7 @@ struct PhotoDetailsView: View {
     }
     
     var body: some View {
-        VStack  {
+        VStack {
             if let details = albumDetails.details {
                 NavigationLink(destination: RemoteImageView(photo.url)) {
                     RemoteImageView(photo.url, imageSide: imageSide)

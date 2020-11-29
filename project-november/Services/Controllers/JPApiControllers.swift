@@ -15,7 +15,6 @@ struct PhotosController {
     }
 }
 
-
 struct AlbumController {
     private static let requestUrl = "\(JPApiConfig.baseUrl)/albums"
     

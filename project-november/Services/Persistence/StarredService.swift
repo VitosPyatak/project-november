@@ -1,6 +1,5 @@
 import Foundation
 
-
 struct StarredService {
     private static let dataService = UserDefaultsService()
     

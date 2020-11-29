@@ -12,7 +12,7 @@ struct ValidationService {
     }
     
     private static func validatieField(_ input: String, with regex: String) -> Bool {
-        let validation = NSPredicate(format: RegexFormats.SELF_MATCHES, regex)
+        let validation = NSPredicate(format: RegexFormats.selfMatches, regex)
         return validation.evaluate(with: input)
     }
 }

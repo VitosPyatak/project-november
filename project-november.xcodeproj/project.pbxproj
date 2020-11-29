@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C72E8A9D85A64BC90B5BAC1 /* libPods-project-november.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0E1EB61FD788D6926E20F6 /* libPods-project-november.a */; };
 		84546A9A257057C500845CEB /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84546A99257057C500845CEB /* ImageLoader.swift */; };
 		84546AB82570F27B00845CEB /* AnimationLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84546AB72570F27B00845CEB /* AnimationLoader.swift */; };
 		84546ABE2570F76F00845CEB /* PhotoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84546ABD2570F76F00845CEB /* PhotoDetailsView.swift */; };
@@ -27,8 +26,6 @@
 		84B132D8256927FD001B403B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B132D7256927FD001B403B /* Assets.xcassets */; };
 		84B132DB256927FD001B403B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B132DA256927FD001B403B /* Preview Assets.xcassets */; };
 		84B132DE256927FD001B403B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B132DC256927FD001B403B /* LaunchScreen.storyboard */; };
-		84B132E9256927FD001B403B /* project_novemberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132E8256927FD001B403B /* project_novemberTests.swift */; };
-		84B132F4256927FD001B403B /* project_novemberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132F3256927FD001B403B /* project_novemberUITests.swift */; };
 		84B1330D25692DC7001B403B /* Placeholders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1330C25692DC7001B403B /* Placeholders.swift */; };
 		84B1331525692E3B001B403B /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1331425692E3B001B403B /* StringConstants.swift */; };
 		84B1331A25692FF6001B403B /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1331925692FF6001B403B /* Messages.swift */; };
@@ -61,26 +58,11 @@
 		84B13426256AD937001B403B /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B13425256AD937001B403B /* PhotosViewModel.swift */; };
 		84B1342C256AEE6C001B403B /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1342B256AEE6C001B403B /* RemoteImageView.swift */; };
 		84B13431256AF10E001B403B /* RemoteImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B13430256AF10E001B403B /* RemoteImageURL.swift */; };
+		9DD20A0219C265AF8F00F312 /* libPods-project-november.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E365444067E0B55E9B62577 /* libPods-project-november.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		84B132E5256927FD001B403B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84B132C3256927FB001B403B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84B132CA256927FB001B403B;
-			remoteInfo = "project-november";
-		};
-		84B132F0256927FD001B403B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84B132C3256927FB001B403B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84B132CA256927FB001B403B;
-			remoteInfo = "project-november";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		4E365444067E0B55E9B62577 /* libPods-project-november.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-project-november.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6813B6CC184DEC37BA901B2B /* Pods-project-november.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project-november.release.xcconfig"; path = "Target Support Files/Pods-project-november/Pods-project-november.release.xcconfig"; sourceTree = "<group>"; };
 		84546A99257057C500845CEB /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		84546AB72570F27B00845CEB /* AnimationLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationLoader.swift; sourceTree = "<group>"; };
@@ -103,10 +85,8 @@
 		84B132DA256927FD001B403B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84B132DD256927FD001B403B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B132DF256927FD001B403B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84B132E4256927FD001B403B /* project-novemberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "project-novemberTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B132E8256927FD001B403B /* project_novemberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_novemberTests.swift; sourceTree = "<group>"; };
 		84B132EA256927FD001B403B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84B132EF256927FD001B403B /* project-novemberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "project-novemberUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B132F3256927FD001B403B /* project_novemberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_novemberUITests.swift; sourceTree = "<group>"; };
 		84B132F5256927FD001B403B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B1330C25692DC7001B403B /* Placeholders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholders.swift; sourceTree = "<group>"; };
@@ -142,7 +122,6 @@
 		84B1342B256AEE6C001B403B /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		84B13430256AF10E001B403B /* RemoteImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageURL.swift; sourceTree = "<group>"; };
 		E06197A5A9FF4EFB6D684EA5 /* Pods-project-november.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project-november.debug.xcconfig"; path = "Target Support Files/Pods-project-november/Pods-project-november.debug.xcconfig"; sourceTree = "<group>"; };
-		FA0E1EB61FD788D6926E20F6 /* libPods-project-november.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-project-november.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,21 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C72E8A9D85A64BC90B5BAC1 /* libPods-project-november.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84B132E1256927FD001B403B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84B132EC256927FD001B403B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				9DD20A0219C265AF8F00F312 /* libPods-project-november.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +139,7 @@
 		1E3ACFDC345DA05FED07BEC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA0E1EB61FD788D6926E20F6 /* libPods-project-november.a */,
+				4E365444067E0B55E9B62577 /* libPods-project-november.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,8 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				84B132CB256927FB001B403B /* project-november.app */,
-				84B132E4256927FD001B403B /* project-novemberTests.xctest */,
-				84B132EF256927FD001B403B /* project-novemberUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -554,6 +517,7 @@
 				84B132C7256927FB001B403B /* Sources */,
 				84B132C8256927FB001B403B /* Frameworks */,
 				84B132C9256927FB001B403B /* Resources */,
+				84546B4A2573B9C400845CEB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -563,42 +527,6 @@
 			productName = "project-november";
 			productReference = 84B132CB256927FB001B403B /* project-november.app */;
 			productType = "com.apple.product-type.application";
-		};
-		84B132E3256927FD001B403B /* project-novemberTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 84B132FB256927FD001B403B /* Build configuration list for PBXNativeTarget "project-novemberTests" */;
-			buildPhases = (
-				84B132E0256927FD001B403B /* Sources */,
-				84B132E1256927FD001B403B /* Frameworks */,
-				84B132E2256927FD001B403B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				84B132E6256927FD001B403B /* PBXTargetDependency */,
-			);
-			name = "project-novemberTests";
-			productName = "project-novemberTests";
-			productReference = 84B132E4256927FD001B403B /* project-novemberTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		84B132EE256927FD001B403B /* project-novemberUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 84B132FE256927FD001B403B /* Build configuration list for PBXNativeTarget "project-novemberUITests" */;
-			buildPhases = (
-				84B132EB256927FD001B403B /* Sources */,
-				84B132EC256927FD001B403B /* Frameworks */,
-				84B132ED256927FD001B403B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				84B132F1256927FD001B403B /* PBXTargetDependency */,
-			);
-			name = "project-novemberUITests";
-			productName = "project-novemberUITests";
-			productReference = 84B132EF256927FD001B403B /* project-novemberUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -611,14 +539,6 @@
 				TargetAttributes = {
 					84B132CA256927FB001B403B = {
 						CreatedOnToolsVersion = 12.2;
-					};
-					84B132E3256927FD001B403B = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = 84B132CA256927FB001B403B;
-					};
-					84B132EE256927FD001B403B = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = 84B132CA256927FB001B403B;
 					};
 				};
 			};
@@ -636,8 +556,6 @@
 			projectRoot = "";
 			targets = (
 				84B132CA256927FB001B403B /* project-november */,
-				84B132E3256927FD001B403B /* project-novemberTests */,
-				84B132EE256927FD001B403B /* project-novemberUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -653,23 +571,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84B132E2256927FD001B403B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84B132ED256927FD001B403B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		84546B4A2573B9C400845CEB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		C15A41BCD785731571EF3DA4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -750,36 +671,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84B132E0256927FD001B403B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84B132E9256927FD001B403B /* project_novemberTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84B132EB256927FD001B403B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84B132F4256927FD001B403B /* project_novemberUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		84B132E6256927FD001B403B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 84B132CA256927FB001B403B /* project-november */;
-			targetProxy = 84B132E5256927FD001B403B /* PBXContainerItemProxy */;
-		};
-		84B132F1256927FD001B403B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 84B132CA256927FB001B403B /* project-november */;
-			targetProxy = 84B132F0256927FD001B403B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		84B132DC256927FD001B403B /* LaunchScreen.storyboard */ = {
@@ -946,94 +838,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pyavic.project-november";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pyavic.project-november1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		84B132FC256927FD001B403B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 92RLHVGQPD;
-				INFOPLIST_FILE = "project-novemberTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pyavic.project-novemberTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/project-november.app/project-november";
-			};
-			name = Debug;
-		};
-		84B132FD256927FD001B403B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 92RLHVGQPD;
-				INFOPLIST_FILE = "project-novemberTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pyavic.project-novemberTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/project-november.app/project-november";
-			};
-			name = Release;
-		};
-		84B132FF256927FD001B403B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 92RLHVGQPD;
-				INFOPLIST_FILE = "project-novemberUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pyavic.project-novemberUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "project-november";
-			};
-			name = Debug;
-		};
-		84B13300256927FD001B403B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 92RLHVGQPD;
-				INFOPLIST_FILE = "project-novemberUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pyavic.project-novemberUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "project-november";
 			};
 			name = Release;
 		};
@@ -1054,24 +862,6 @@
 			buildConfigurations = (
 				84B132F9256927FD001B403B /* Debug */,
 				84B132FA256927FD001B403B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		84B132FB256927FD001B403B /* Build configuration list for PBXNativeTarget "project-novemberTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				84B132FC256927FD001B403B /* Debug */,
-				84B132FD256927FD001B403B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		84B132FE256927FD001B403B /* Build configuration list for PBXNativeTarget "project-novemberUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				84B132FF256927FD001B403B /* Debug */,
-				84B13300256927FD001B403B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
