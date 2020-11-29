@@ -4,5 +4,13 @@ osx_image: xcode12.2
 xcode_project: project-november.xcodeproj
 xcode_scheme: project-november
 xcode_sdk: iphonesimulator14.2
+
 script:
   - xcodebuild clean build -workspace project-november.xcworkspace -scheme "project-november" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=14.2,name=iPhone 12" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO | xcpretty
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_API_TOKEN
+  skip_cleanup: true
+  on:
+    tags: true
