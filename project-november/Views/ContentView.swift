@@ -4,47 +4,32 @@ struct ContentView: View {
     @ObservedObject var viewModel = RegisterFormViewModel()
     
     var body: some View {
-        NavigationView {
-            Form {
-                ForEach(viewModel.fields.indices) { fieldIndex in
-                    FormTextField(getTextFieldBinding(by: fieldIndex))
-                }
-                
-                Button(action: onCreateButtonPressed) {
-                    Text(ButtonPlacehoder.createUser)
-                }
-                
-                NavigationLink(destination: UsersListView()) {
-                    Button(action: {}) {
-                        Text(ButtonPlacehoder.usersList)
-                    }
-                }
-                
-                NavigationLink(destination: PhotosView()) {
-                    Button(action: {}) {
-                        Text(ButtonPlacehoder.photosList)
-                    }
-                }
+        TabView {
+            NavigationView {
+                RegisterView()
             }
-            .navigationTitle(NavigationTitles.createUser)
+            .tabItem { getViewTabItem(with: SystemIconType.personBadgePlus) }
+            
+            NavigationView {
+                UsersListView()
+            }
+            .tabItem { getViewTabItem(with: SystemIconType.personFill) }
+            
+            NavigationView {
+                PhotosView()
+            }
+            .tabItem { getViewTabItem(with: SystemIconType.photoListRecFill) }
+            
+            NavigationView {
+                StarredPhotosView()
+            }
+            .tabItem { getViewTabItem(with: SystemIconType.starFill) }
         }
     }
     
-    private func onCreateButtonPressed() {
-        viewModel.validateFields()
-        if viewModel.areAllFieldsValid() {
-            UserService.save(from: viewModel.fields)
+    private func getViewTabItem(with systemIcon: SystemIconType) -> some View {
+        HStack {
+            Image(uiImage: UIImage(systemName: systemIcon.name())!)
         }
-    }
-    
-    
-    private func getTextFieldBinding(by index: Int) -> Binding<TextFieldInput> {
-        $viewModel.fields[index]
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

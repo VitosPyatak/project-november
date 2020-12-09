@@ -4,23 +4,36 @@ import Combine
 
 struct RemoteImage: View {
     @ObservedObject var remoteImageUrl: RemoteImageURL
-
-    private let imageSide: CGFloat = 50
-
+    
+    var imageSide: CGFloat?
+    
     init(_ imageUrl: String) {
         self.remoteImageUrl = RemoteImageURL(imageURL: imageUrl)
     }
-
-    var body: some View {
-        Image(uiImage: getUiImage())
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: imageSide, height: imageSide)
+    
+    init(_ imageUrl: String, imageSide: CGFloat) {
+        self.remoteImageUrl = RemoteImageURL(imageURL: imageUrl)
+        self.imageSide = imageSide
     }
-
-    private func getUiImage() -> UIImage {
-        remoteImageUrl.imageData.isEmpty
-            ? UIImage(systemName: "heart.fill")!
-            : UIImage(data: remoteImageUrl.imageData)!
+    
+    var body: some View {
+        let viewBody = getBody()
+        
+        guard imageSide != nil else {
+            return AnyView(viewBody)
+        }
+        
+        return AnyView(viewBody.frame(width: imageSide, height: imageSide))
+    }
+    
+    private func getBody() -> some View {
+        HStack {
+            if remoteImageUrl.imageData.isEmpty {
+                AnimationLoader(loaderStyle: .medium)
+            } else {
+                Image(uiImage: UIImage(data: remoteImageUrl.imageData)!)
+                    .resizable()
+            }
+        }
     }
 }
