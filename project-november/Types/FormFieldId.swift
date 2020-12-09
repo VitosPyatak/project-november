@@ -1,6 +1,6 @@
 import Foundation
 
-enum FormFieldId {
+enum FormFieldType {
     case firstname
     case lastname
     case email

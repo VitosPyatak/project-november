@@ -1,19 +1,17 @@
 import Foundation
 import SwiftUI
 
-struct FormModel<GenericForm> where GenericForm: FormManager {
+struct FormModel {
     var formFields: [TextFieldInput]
-    var formManager: GenericForm
     
     var areAllInputsValid: Bool = false
     
-    init(formFields: [TextFieldInput], manager: GenericForm) {
+    init(formFields: [TextFieldInput]) {
         self.formFields = formFields
-        self.formManager = manager
     }
     
-    func getField(by id: FormFieldId) -> TextFieldInput {
-        formFields.first(where: { field in field.id == id})!
+    func getField(by fieldType: TextFieldType) -> TextFieldInput {
+        formFields.first(where: { field in field.type == fieldType})!
     }
     
     func getField(by index: Int) -> TextFieldInput {
@@ -45,7 +43,7 @@ struct FormModel<GenericForm> where GenericForm: FormManager {
         let passwords = getPasswordFields()
         if !ValidationService.validateValuesMatching(of: passwords) {
             for (index, field) in formFields.enumerated() {
-                if formFields[index].id == .passwordConfirmation {
+                if formFields[index].type == .passwordConfirmation {
                     modifyFieldOnInvalidInput(field, by: index)
                 }
             }
@@ -53,7 +51,7 @@ struct FormModel<GenericForm> where GenericForm: FormManager {
     }
     
     private mutating func processFormField(formField: TextFieldInput, index: Int) {
-        if ValidationService.validate(formField.input, by: formField.id) {
+        if ValidationService.validate(formField.input, by: formField.type) {
             modifyFieldOnSuccessfullValidation(formField, by: index)
         } else {
             modifyFieldOnInvalidInput(formField, by: index)
@@ -61,21 +59,20 @@ struct FormModel<GenericForm> where GenericForm: FormManager {
     }
     
     private mutating func modifyFieldOnSuccessfullValidation(_ field: TextFieldInput, by index: Int) {
-        let sectionLabel = formManager.getSuccessMessage(by: field.id)
+        let sectionLabel = field.successLabel()
         formFields[index].label = sectionLabel
         formFields[index].isValid = true
         formFields[index].isValidated = true
     }
     
     private mutating func modifyFieldOnInvalidInput(_ field: TextFieldInput, by index: Int) {
-        let errorMessage = formManager.getErrorMessage(by: field.id)
-        formFields[index].label = errorMessage
+        formFields[index].label = field.validationError()
         formFields[index].isValid = false
         formFields[index].isValidated = true
     }
     
     private func getPasswordFields() -> [TextFieldInput] {
-        formFields.filter({ field in field.id == .password || field.id == .passwordConfirmation })
+        formFields.filter({ field in field.type == .password || field.type == .passwordConfirmation })
     }
     
     private func areAllFieldsValid() -> Bool {
