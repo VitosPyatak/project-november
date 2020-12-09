@@ -9,6 +9,8 @@ enum ButtonPlacehoder {
     static let createUser = "Create user"
     static let usersList = "List users"
     static let photosList = "List photos"
+    static let chooseImage = "Choose image"
+    static let uploadImage = "Upload image"
 }
 
 enum NavigationTitles {

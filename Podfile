@@ -7,4 +7,5 @@ target 'project-november' do
 
   # Pods for project-november
   pod 'Alamofire', '~> 5.2'
+  pod 'SwiftLint'
 end

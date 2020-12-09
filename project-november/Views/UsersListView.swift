@@ -7,9 +7,11 @@ struct UsersListView: View {
         HStack {
             if let allUsers = users {
                 List(allUsers) { user in
-                    VStack {
-                        Text("\(user.firstName!) \(user.lastName!)").fontWeight(.bold)
-                        Text(user.phoneNumber!).fontWeight(.regular)
+                    NavigationLink(destination: UserAccountView(user)) {
+                        VStack {
+                            Text(getHeaderText(from: user)).fontWeight(.bold)
+                            Text(getSubheaderText(from: user)).fontWeight(.regular)
+                        }
                     }
                 }
             } else {
@@ -22,5 +24,13 @@ struct UsersListView: View {
     
     private func fetchUsers() {
         users = UserService.getAll()
+    }
+    
+    private func getHeaderText(from user: UserEntity) -> String {
+        "\(user.firstName!) \(user.lastName!)"
+    }
+
+    private func getSubheaderText(from user: UserEntity) -> String {
+        user.phoneNumber!
     }
 }

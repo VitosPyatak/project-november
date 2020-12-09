@@ -17,7 +17,6 @@ struct FormTextField: View {
                     .opacity(defaultOpacity)
                     .foregroundColor(getColor())
                     
-
                 if isFieldSecured() {
                     SecureField(getTextFieldPlaceholder(), text: textFieldEntry.input)
                 } else {

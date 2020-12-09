@@ -30,4 +30,8 @@ struct UserDefaultsService {
     func getDictionary(for key: String) -> Any? {
         userDefaults.object(forKey: key)
     }
+    
+    func getString(for key: String) -> String? {
+            userDefaults.string(forKey: key)
+        }
 }

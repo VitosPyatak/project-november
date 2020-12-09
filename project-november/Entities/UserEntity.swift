@@ -1,6 +1,7 @@
 import Foundation
 
 class UserEntity: Codable, Identifiable {
+    var id = UUID()
     var firstName: String?
     var lastName: String?
     var phoneNumber: String?

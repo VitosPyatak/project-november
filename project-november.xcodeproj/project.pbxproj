@@ -60,6 +60,16 @@
 		84B133A6256A56C0001B403B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		84B133B9256A5BC0001B403B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		84B133BE256A6B27001B403B /* (null) in Sources */ = {isa = PBXBuildFile; };
+		84F7AA92258153DC000CD99C /* ServerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AA91258153DC000CD99C /* ServerController.swift */; };
+		84F7AA972581546B000CD99C /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AA962581546B000CD99C /* Http.swift */; };
+		84F7AA9C258154AA000CD99C /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AA9B258154AA000CD99C /* Responses.swift */; };
+		84F7AAA2258155E8000CD99C /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AAA1258155E8000CD99C /* ImageService.swift */; };
+		84F7AAAA2581560B000CD99C /* PersistentImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AAA92581560B000CD99C /* PersistentImageService.swift */; };
+		84F7AAB025815682000CD99C /* TimeConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AAAF25815682000CD99C /* TimeConverterService.swift */; };
+		84F7AAB5258156A8000CD99C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AAB4258156A8000CD99C /* ImagePicker.swift */; };
+		84F7AABA258156CD000CD99C /* CircleTimeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AAB9258156CD000CD99C /* CircleTimeLoader.swift */; };
+		84F7AABF258156E4000CD99C /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AABE258156E4000CD99C /* CountdownView.swift */; };
+		84F7AAC4258156FD000CD99C /* UserAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AAC3258156FD000CD99C /* UserAccountView.swift */; };
 		84F928442580EE9B00F0C8B1 /* SystemIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F928432580EE9B00F0C8B1 /* SystemIcons.swift */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +145,16 @@
 		84B1336925693EBD001B403B /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		84B1337025694192001B403B /* RegisterFormVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormVIewModel.swift; sourceTree = "<group>"; };
 		84B133822569469C001B403B /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		84F7AA91258153DC000CD99C /* ServerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerController.swift; sourceTree = "<group>"; };
+		84F7AA962581546B000CD99C /* Http.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
+		84F7AA9B258154AA000CD99C /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		84F7AAA1258155E8000CD99C /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		84F7AAA92581560B000CD99C /* PersistentImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentImageService.swift; sourceTree = "<group>"; };
+		84F7AAAF25815682000CD99C /* TimeConverterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverterService.swift; sourceTree = "<group>"; };
+		84F7AAB4258156A8000CD99C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		84F7AAB9258156CD000CD99C /* CircleTimeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTimeLoader.swift; sourceTree = "<group>"; };
+		84F7AABE258156E4000CD99C /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
+		84F7AAC3258156FD000CD99C /* UserAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountView.swift; sourceTree = "<group>"; };
 		84F928432580EE9B00F0C8B1 /* SystemIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemIcons.swift; sourceTree = "<group>"; };
 		AF8DDDC98BF9C442B953C8E2 /* Pods-project-november.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project-november.debug.xcconfig"; path = "Target Support Files/Pods-project-november/Pods-project-november.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,6 +217,7 @@
 				84ACB7C825811E150019C2A6 /* PhotosController.swift */,
 				84ACB7F02581279C0019C2A6 /* ApiController.swift */,
 				84ACB7F5258138800019C2A6 /* AlbumController.swift */,
+				84F7AA91258153DC000CD99C /* ServerController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -205,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				84ACB7CE25811E4C0019C2A6 /* RemoteImage.swift */,
+				84F7AAB4258156A8000CD99C /* ImagePicker.swift */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -214,6 +236,7 @@
 			children = (
 				84ACB7FB2581423F0019C2A6 /* NavigationService.swift */,
 				84ACB803258142620019C2A6 /* StarredService.swift */,
+				84F7AAA92581560B000CD99C /* PersistentImageService.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -222,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				84ACB809258143830019C2A6 /* Loader.swift */,
+				84F7AAB9258156CD000CD99C /* CircleTimeLoader.swift */,
 			);
 			path = Loaders;
 			sourceTree = "<group>";
@@ -315,6 +339,8 @@
 				84B132D2256927FB001B403B /* ContentView.swift */,
 				84ACB795258115530019C2A6 /* UsersListView.swift */,
 				84ACB83D25814F9E0019C2A6 /* RegisterView.swift */,
+				84F7AABE258156E4000CD99C /* CountdownView.swift */,
+				84F7AAC3258156FD000CD99C /* UserAccountView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -346,6 +372,7 @@
 				84B1331425692E3B001B403B /* StringConstants.swift */,
 				84B1331925692FF6001B403B /* Messages.swift */,
 				84F928432580EE9B00F0C8B1 /* SystemIcons.swift */,
+				84F7AA962581546B000CD99C /* Http.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -387,6 +414,8 @@
 		84B1336825693EAB001B403B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				84F7AAAE2581566D000CD99C /* Time */,
+				84F7AAA0258155DE000CD99C /* Files */,
 				84ACB7FA258142290019C2A6 /* Persistence */,
 				84B133B7256A5BAB001B403B /* Coders */,
 				84B133A4256A56B3001B403B /* Builders */,
@@ -431,6 +460,7 @@
 			children = (
 				84ACB7BC25811D160019C2A6 /* Api */,
 				84ACB7AE258115D70019C2A6 /* UserEntity.swift */,
+				84F7AA9B258154AA000CD99C /* Responses.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -475,6 +505,22 @@
 			path = Coders;
 			sourceTree = "<group>";
 		};
+		84F7AAA0258155DE000CD99C /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				84F7AAA1258155E8000CD99C /* ImageService.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		84F7AAAE2581566D000CD99C /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				84F7AAAF25815682000CD99C /* TimeConverterService.swift */,
+			);
+			path = Time;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -486,6 +532,7 @@
 				84B132C7256927FB001B403B /* Sources */,
 				84B132C8256927FB001B403B /* Frameworks */,
 				84B132C9256927FB001B403B /* Resources */,
+				84F7AA8425815197000CD99C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -602,6 +649,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		84F7AA8425815197000CD99C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		D87D506D33E1ABBCE9396293 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -633,19 +697,23 @@
 			files = (
 				84ACB7A5258115B80019C2A6 /* UserDefaults.swift in Sources */,
 				84B13320256931DB001B403B /* RoundedColoredButtonStyle.swift in Sources */,
+				84F7AAB025815682000CD99C /* TimeConverterService.swift in Sources */,
 				84ACB796258115530019C2A6 /* UsersListView.swift in Sources */,
 				84ACB79B2581156E0019C2A6 /* UserService.swift in Sources */,
 				84B133A0256A5625001B403B /* (null) in Sources */,
 				84F928442580EE9B00F0C8B1 /* SystemIcons.swift in Sources */,
 				84B132CF256927FB001B403B /* AppDelegate.swift in Sources */,
 				84B133282569356D001B403B /* RoundedTextFieldStyle.swift in Sources */,
+				84F7AA9C258154AA000CD99C /* Responses.swift in Sources */,
 				84ACB81D258145F00019C2A6 /* PhotosListView.swift in Sources */,
 				84B133BE256A6B27001B403B /* (null) in Sources */,
 				84ACB83E25814F9E0019C2A6 /* RegisterView.swift in Sources */,
 				84B13392256A54C0001B403B /* (null) in Sources */,
+				84F7AABF258156E4000CD99C /* CountdownView.swift in Sources */,
 				84ACB834258149E70019C2A6 /* AlbumDetailsViewModel.swift in Sources */,
 				84B1337125694192001B403B /* RegisterFormVIewModel.swift in Sources */,
 				84ACB7A0258115A50019C2A6 /* UserBuilder.swift in Sources */,
+				84F7AABA258156CD000CD99C /* CircleTimeLoader.swift in Sources */,
 				84B132D6256927FB001B403B /* project_november.xcdatamodeld in Sources */,
 				84ACB7F12581279C0019C2A6 /* ApiController.swift in Sources */,
 				84ACB804258142620019C2A6 /* StarredService.swift in Sources */,
@@ -658,11 +726,14 @@
 				84ACB7F6258138800019C2A6 /* AlbumController.swift in Sources */,
 				84ACB822258146040019C2A6 /* PhotosView.swift in Sources */,
 				84ACB7AA258115CB0019C2A6 /* JsonCoder.swift in Sources */,
+				84F7AAAA2581560B000CD99C /* PersistentImageService.swift in Sources */,
 				84ACB7BE25811D280019C2A6 /* PhotoEntity.swift in Sources */,
 				84ACB80F258145B40019C2A6 /* ImageViewer.swift in Sources */,
 				84B133A6256A56C0001B403B /* (null) in Sources */,
+				84F7AAC4258156FD000CD99C /* UserAccountView.swift in Sources */,
 				84B1333325693A79001B403B /* TextFieldType.swift in Sources */,
 				84B1335F25693E24001B403B /* TextFieldInput.swift in Sources */,
+				84F7AA92258153DC000CD99C /* ServerController.swift in Sources */,
 				84ACB7CF25811E4C0019C2A6 /* RemoteImage.swift in Sources */,
 				84B1331A25692FF6001B403B /* Messages.swift in Sources */,
 				84ACB7C325811DED0019C2A6 /* PhotosViewModel.swift in Sources */,
@@ -672,13 +743,16 @@
 				84ACB7FC2581423F0019C2A6 /* NavigationService.swift in Sources */,
 				84B132D1256927FB001B403B /* SceneDelegate.swift in Sources */,
 				84B13399256A5508001B403B /* (null) in Sources */,
+				84F7AAB5258156A8000CD99C /* ImagePicker.swift in Sources */,
 				84B132D3256927FB001B403B /* ContentView.swift in Sources */,
 				84B133832569469C001B403B /* FormTextField.swift in Sources */,
+				84F7AA972581546B000CD99C /* Http.swift in Sources */,
 				84ACB7C925811E150019C2A6 /* PhotosController.swift in Sources */,
 				84ACB7EC2581241A0019C2A6 /* AlbumEntity.swift in Sources */,
 				84B133B9256A5BC0001B403B /* (null) in Sources */,
 				84ACB815258145D60019C2A6 /* ImageDetailsView.swift in Sources */,
 				84ACB80A258143830019C2A6 /* Loader.swift in Sources */,
+				84F7AAA2258155E8000CD99C /* ImageService.swift in Sources */,
 				84ACB827258146340019C2A6 /* StarredPhotosView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

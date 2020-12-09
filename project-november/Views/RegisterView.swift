@@ -24,7 +24,6 @@ struct RegisterView: View {
         }
     }
     
-    
     private func getTextFieldBinding(by index: Int) -> Binding<TextFieldInput> {
         $viewModel.fields[index]
     }

@@ -26,7 +26,7 @@ final class PhotosViewModel: ObservableObject {
     
     func loadStarredPhotos() {
         let starredPhotos = StarredService.getStarred()
-        starredPhotosMapping = starredPhotos.reduce(into: [Int : PhotoEntity]()) { dictionary, photo in
+        starredPhotosMapping = starredPhotos.reduce(into: [Int: PhotoEntity]()) { dictionary, photo in
             dictionary[photo.id] = photo
         }
     }

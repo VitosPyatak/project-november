@@ -37,7 +37,6 @@ enum SystemIconType {
             return SystemIcons.personBadgePlus
         case .personFill:
             return SystemIcons.personFill
-            
         }
     }
 }

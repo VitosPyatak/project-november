@@ -42,10 +42,8 @@ struct FormModel {
     private mutating func processPasswordMatching() {
         let passwords = getPasswordFields()
         if !ValidationService.validateValuesMatching(of: passwords) {
-            for (index, field) in formFields.enumerated() {
-                if formFields[index].type == .passwordConfirmation {
-                    modifyFieldOnInvalidInput(field, by: index)
-                }
+            for (index, field) in formFields.enumerated() where formFields[index].type == .passwordConfirmation {
+                modifyFieldOnInvalidInput(field, by: index)
             }
         }
     }

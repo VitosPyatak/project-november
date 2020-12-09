@@ -16,12 +16,12 @@ struct ApiController<GenericResponseEntity> where GenericResponseEntity: Codable
         }
     }
     
-    mutating func getOne(by id: Int, completion complete: @escaping (GenericResponseEntity?) -> Void) {
+    func getOne(by id: Int, completion complete: @escaping (GenericResponseEntity?) -> Void) {
         AF.request(getRequestUrl(id), method: .get).responseDecodable(of: GenericResponseEntity.self) { response in
             complete(response.value)
         }
     }
-        
+            
     private func getRequestUrl(_ id: Int) -> String {
         "\(requestUrl)/\(id)"
     }
