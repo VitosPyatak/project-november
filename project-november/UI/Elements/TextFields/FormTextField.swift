@@ -37,7 +37,7 @@ struct FormTextField: View {
     }
     
     private func getSectionTextHeader() -> Text {
-        Text(textFieldEntry.label.wrappedValue)
+        Text(textFieldEntry.wrappedValue.label())
             .foregroundColor(getColor())
     }
     
@@ -46,7 +46,7 @@ struct FormTextField: View {
     }
 
     private func isFieldSecured() -> Bool {
-        textFieldEntry.isSecured.wrappedValue
+        textFieldEntry.wrappedValue.isSecure()
     }
 
     private func getFieldType() -> TextFieldType {

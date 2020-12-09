@@ -19,7 +19,7 @@ struct FormModel {
     }
     
     func getLabel(by index: Int) -> String {
-        formFields[index].label
+        formFields[index].label()
     }
     
     mutating func validateFields() {
@@ -59,14 +59,11 @@ struct FormModel {
     }
     
     private mutating func modifyFieldOnSuccessfullValidation(_ field: TextFieldInput, by index: Int) {
-        let sectionLabel = field.successLabel()
-        formFields[index].label = sectionLabel
         formFields[index].isValid = true
         formFields[index].isValidated = true
     }
     
     private mutating func modifyFieldOnInvalidInput(_ field: TextFieldInput, by index: Int) {
-        formFields[index].label = field.validationError()
         formFields[index].isValid = false
         formFields[index].isValidated = true
     }

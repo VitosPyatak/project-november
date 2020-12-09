@@ -62,4 +62,13 @@ enum TextFieldType {
             return InputRegex.password
         }
     }
+    
+    func isSecure() -> Bool {
+        switch self {
+        case .password, .passwordConfirmation:
+            return true
+        default:
+            return false
+        }
+    }
 }

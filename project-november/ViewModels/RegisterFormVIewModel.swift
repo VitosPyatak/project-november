@@ -33,8 +33,8 @@ class RegisterFormViewModel: ObservableObject {
             TextFieldInput(.lastname),
             TextFieldInput(.phoneNumber),
             TextFieldInput(.email),
-            TextFieldInput(.password, isSecured: true),
-            TextFieldInput(.passwordConfirmation, isSecured: true)
+            TextFieldInput(.password),
+            TextFieldInput(.passwordConfirmation)
         ]
         return FormModel(formFields: formFields)
     }

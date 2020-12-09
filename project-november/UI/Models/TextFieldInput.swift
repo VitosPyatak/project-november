@@ -3,25 +3,20 @@ import Foundation
 struct TextFieldInput: Identifiable {
     var id = UUID()
     var type: TextFieldType
-    var label: String
-    var isSecured: Bool
     
     var input: String = Strings.empty
     var isValid: Bool = true
     var isValidated: Bool = false
     
-    init(_ type: TextFieldType, isSecured: Bool = false) {
+    init(_ type: TextFieldType) {
         self.type = type
-        self.label = type.validationError()
-        self.isSecured = isSecured
     }
     
-    
-    func validationError() -> String {
-        type.validationError()
+    func label() -> String {
+        isValid ? type.label() : type.validationError()
     }
     
-    func successLabel() -> String {
-        type.label()
+    func isSecure() -> Bool {
+        type.isSecure()
     }
 }
