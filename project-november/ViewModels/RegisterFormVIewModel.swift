@@ -1,8 +1,7 @@
 import Foundation
 
 class RegisterFormViewModel: ObservableObject {
-    @Published private var model: FormModel<RegisterFormManager> = createModel()
-
+    @Published var model: FormModel = createModel()
     var fields: [TextFieldInput] {
         get { model.formFields }
         set { model.formFields = newValue }
@@ -16,8 +15,8 @@ class RegisterFormViewModel: ObservableObject {
         model.areAllInputsValid
     }
     
-    func getField(by id: FormFieldId) -> TextFieldInput {
-        model.getField(by: id)
+    func getField(by type: TextFieldType) -> TextFieldInput {
+        model.getField(by: type)
     }
     
     func getField(by index: Int) -> TextFieldInput {
@@ -28,15 +27,15 @@ class RegisterFormViewModel: ObservableObject {
         model.getLabel(by: index)
     }
     
-    private static func createModel() -> FormModel<RegisterFormManager> {
+    private static func createModel() -> FormModel {
         let formFields: [TextFieldInput] = [
-            TextFieldInput(id: .firstname, label: RegisterLabels.get(by: .firstname)),
-            TextFieldInput(id: .lastname, label: RegisterLabels.get(by: .lastname)),
-            TextFieldInput(id: .phoneNumber, label: RegisterLabels.get(by: .phoneNumber)),
-            TextFieldInput(id: .email, label: RegisterLabels.get(by: .email)),
-            TextFieldInput(id: .password, label: RegisterLabels.get(by: .password), isSecured: true),
-            TextFieldInput(id: .passwordConfirmation, label: RegisterLabels.get(by: .passwordConfirmation), isSecured: true)
+            TextFieldInput(.firstname),
+            TextFieldInput(.lastname),
+            TextFieldInput(.phoneNumber),
+            TextFieldInput(.email),
+            TextFieldInput(.password, isSecured: true),
+            TextFieldInput(.passwordConfirmation, isSecured: true)
         ]
-        return FormModel(formFields: formFields, manager: RegisterFormManager())
+        return FormModel(formFields: formFields)
     }
 }

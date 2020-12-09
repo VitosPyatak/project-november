@@ -22,7 +22,7 @@ struct FormTextField: View {
                     SecureField(getTextFieldPlaceholder(), text: textFieldEntry.input)
                 } else {
                     TextField(getTextFieldPlaceholder(), text: textFieldEntry.input)
-                        .keyboardType(KeyboardTypes.get(getFieldId()))
+                        .keyboardType(getFieldType().keyboardType())
                 }
             }
             .autocapitalization(.none)
@@ -32,8 +32,8 @@ struct FormTextField: View {
     }
     
     private func getTextFieldPlaceholder() -> String {
-        let formFieldId = getFieldId()
-        return RegisterLabels.get(by: formFieldId)
+        let formFieldType = getFieldType()
+        return formFieldType.label()
     }
     
     private func getSectionTextHeader() -> Text {
@@ -49,8 +49,8 @@ struct FormTextField: View {
         textFieldEntry.isSecured.wrappedValue
     }
 
-    private func getFieldId() -> FormFieldId {
-        textFieldEntry.id.wrappedValue
+    private func getFieldType() -> TextFieldType {
+        textFieldEntry.type.wrappedValue
     }
 
     private func getColor() -> Color {
@@ -62,12 +62,12 @@ struct FormTextField: View {
     }
 
     private func getTextFieldImage() -> String {
-        var iconImage: SystemIcons.SysIcon
+        var iconType: SystemIconType
         if textFieldEntry.isValidated.wrappedValue {
-            iconImage = isInputValid() ? .confirmation : .reject
+            iconType = isInputValid() ? .confirmation : .reject
         } else {
-            iconImage = .pencil
+            iconType = .pencil
         }
-        return SystemIcons.get(iconImage)
+        return iconType.name()
     }
 }

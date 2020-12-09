@@ -1,8 +1,8 @@
 import Foundation
 
 struct ValidationService {
-    static func validate(_ input: String, by validationField: FormFieldId) -> Bool {
-        let validationRegex = InputRegex.get(by: validationField)
+    static func validate(_ input: String, by validationField: TextFieldType) -> Bool {
+        let validationRegex = validationField.validationRegex()
         return validatieField(input, with: validationRegex)
     }
     
@@ -12,7 +12,7 @@ struct ValidationService {
     }
     
     private static func validatieField(_ input: String, with regex: String) -> Bool {
-        let validation = NSPredicate(format: RegexFormats.SELF_MATCHES, regex)
+        let validation = NSPredicate(format: "SELF MATCHES %@", regex)
         return validation.evaluate(with: input)
     }
 }
