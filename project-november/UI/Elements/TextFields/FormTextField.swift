@@ -22,7 +22,7 @@ struct FormTextField: View {
                     SecureField(getTextFieldPlaceholder(), text: textFieldEntry.input)
                 } else {
                     TextField(getTextFieldPlaceholder(), text: textFieldEntry.input)
-                        .keyboardType(getFieldId().keyboardType())
+                        .keyboardType(getFieldType().keyboardType())
                 }
             }
             .autocapitalization(.none)
@@ -32,7 +32,7 @@ struct FormTextField: View {
     }
     
     private func getTextFieldPlaceholder() -> String {
-        let formFieldType = getFieldId()
+        let formFieldType = getFieldType()
         return formFieldType.label()
     }
     
@@ -49,7 +49,7 @@ struct FormTextField: View {
         textFieldEntry.isSecured.wrappedValue
     }
 
-    private func getFieldId() -> TextFieldType {
+    private func getFieldType() -> TextFieldType {
         textFieldEntry.type.wrappedValue
     }
 

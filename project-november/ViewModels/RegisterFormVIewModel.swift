@@ -16,8 +16,8 @@ class RegisterFormViewModel: ObservableObject {
         model.areAllInputsValid
     }
     
-    func getField(by id: TextFieldType) -> TextFieldInput {
-        model.getField(by: id)
+    func getField(by type: TextFieldType) -> TextFieldInput {
+        model.getField(by: type)
     }
     
     func getField(by index: Int) -> TextFieldInput {
