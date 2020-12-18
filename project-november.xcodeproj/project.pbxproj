@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		329A26AFE41B328E582C40F4 /* libPods-project-november.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AEE1B81827F61CDAA58891C /* libPods-project-november.a */; };
 		84ACB796258115530019C2A6 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACB795258115530019C2A6 /* UsersListView.swift */; };
 		84ACB79B2581156E0019C2A6 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACB79A2581156E0019C2A6 /* UserService.swift */; };
 		84ACB7A0258115A50019C2A6 /* UserBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACB79F258115A50019C2A6 /* UserBuilder.swift */; };
 		84ACB7A5258115B80019C2A6 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACB7A4258115B80019C2A6 /* UserDefaults.swift */; };
 		84ACB7AA258115CB0019C2A6 /* JsonCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACB7A9258115CB0019C2A6 /* JsonCoder.swift */; };
+
 		84ACB7AF258115D70019C2A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACB7AE258115D70019C2A6 /* User.swift */; };
+
+
+		84ACB7BE25811D280019C2A6 /* PhotoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACB7BD25811D280019C2A6 /* PhotoEntity.swift */; };
+		84ACB7C325811DED0019C2A6 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACB7C225811DED0019C2A6 /* PhotosViewModel.swift */; };
+		84ACB7C925811E150019C2A6 /* PhotosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACB7C825811E150019C2A6 /* PhotosController.swift */; };
+		84ACB7CF25811E4C0019C2A6 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACB7CE25811E4C0019C2A6 /* RemoteImage.swift */; };
+		84ACB7D425811E8F0019C2A6 /* RemoteImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACB7D325811E8F0019C2A6 /* RemoteImageURL.swift */; };
+		84ACB7D925811F290019C2A6 /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACB7D825811F290019C2A6 /* PhotosView.swift */; };
+
 		84B132CF256927FB001B403B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132CE256927FB001B403B /* AppDelegate.swift */; };
 		84B132D1256927FB001B403B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132D0256927FB001B403B /* SceneDelegate.swift */; };
 		84B132D3256927FB001B403B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B132D2256927FB001B403B /* ContentView.swift */; };
@@ -34,12 +45,12 @@
 		84B1336A25693EBD001B403B /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1336925693EBD001B403B /* Validation.swift */; };
 		84B1337125694192001B403B /* RegisterFormVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1337025694192001B403B /* RegisterFormVIewModel.swift */; };
 		84B133832569469C001B403B /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B133822569469C001B403B /* FormTextField.swift */; };
-		84B13392256A54C0001B403B /* (null) in Sources */ = {isa = PBXBuildFile; };
-		84B13399256A5508001B403B /* (null) in Sources */ = {isa = PBXBuildFile; };
-		84B133A0256A5625001B403B /* (null) in Sources */ = {isa = PBXBuildFile; };
-		84B133A6256A56C0001B403B /* (null) in Sources */ = {isa = PBXBuildFile; };
-		84B133B9256A5BC0001B403B /* (null) in Sources */ = {isa = PBXBuildFile; };
-		84B133BE256A6B27001B403B /* (null) in Sources */ = {isa = PBXBuildFile; };
+		84B13392256A54C0001B403B /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		84B13399256A5508001B403B /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		84B133A0256A5625001B403B /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		84B133A6256A56C0001B403B /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		84B133B9256A5BC0001B403B /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		84B133BE256A6B27001B403B /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		84F928442580EE9B00F0C8B1 /* SystemIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F928432580EE9B00F0C8B1 /* SystemIcons.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,12 +72,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		248BDBDD85B6B7FB7F7D81F9 /* Pods-project-november.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project-november.release.xcconfig"; path = "Target Support Files/Pods-project-november/Pods-project-november.release.xcconfig"; sourceTree = "<group>"; };
+		6AEE1B81827F61CDAA58891C /* libPods-project-november.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-project-november.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84ACB795258115530019C2A6 /* UsersListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		84ACB79A2581156E0019C2A6 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		84ACB79F258115A50019C2A6 /* UserBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserBuilder.swift; sourceTree = "<group>"; };
 		84ACB7A4258115B80019C2A6 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaults.swift; path = "project-november/Services/Repositories/UserDefaults.swift"; sourceTree = SOURCE_ROOT; };
 		84ACB7A9258115CB0019C2A6 /* JsonCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonCoder.swift; sourceTree = "<group>"; };
+
 		84ACB7AE258115D70019C2A6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		84ACB7BD25811D280019C2A6 /* PhotoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEntity.swift; sourceTree = "<group>"; };
+		84ACB7C225811DED0019C2A6 /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
+		84ACB7C825811E150019C2A6 /* PhotosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosController.swift; sourceTree = "<group>"; };
+		84ACB7CE25811E4C0019C2A6 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		84ACB7D325811E8F0019C2A6 /* RemoteImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageURL.swift; sourceTree = "<group>"; };
+		84ACB7D825811F290019C2A6 /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+
 		84B132CB256927FB001B403B /* project-november.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project-november.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B132CE256927FB001B403B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B132D0256927FB001B403B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +116,7 @@
 		84B1337025694192001B403B /* RegisterFormVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormVIewModel.swift; sourceTree = "<group>"; };
 		84B133822569469C001B403B /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		84F928432580EE9B00F0C8B1 /* SystemIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemIcons.swift; sourceTree = "<group>"; };
+		AF8DDDC98BF9C442B953C8E2 /* Pods-project-november.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project-november.debug.xcconfig"; path = "Target Support Files/Pods-project-november/Pods-project-november.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329A26AFE41B328E582C40F4 /* libPods-project-november.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +145,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D388F4D021ACE725B1CC77C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF8DDDC98BF9C442B953C8E2 /* Pods-project-november.debug.xcconfig */,
+				248BDBDD85B6B7FB7F7D81F9 /* Pods-project-november.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7978C0DC6C5D619DB401CAF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AEE1B81827F61CDAA58891C /* libPods-project-november.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84ACB7BC25811D160019C2A6 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				84ACB7BD25811D280019C2A6 /* PhotoEntity.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		84ACB7C725811DFE0019C2A6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84ACB7C825811E150019C2A6 /* PhotosController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84ACB7CD25811E350019C2A6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				84ACB7CE25811E4C0019C2A6 /* RemoteImage.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		84B132C2256927FB001B403B = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +194,8 @@
 				84B132E7256927FD001B403B /* project-novemberTests */,
 				84B132F2256927FD001B403B /* project-novemberUITests */,
 				84B132CC256927FB001B403B /* Products */,
+				4D388F4D021ACE725B1CC77C /* Pods */,
+				7978C0DC6C5D619DB401CAF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +212,7 @@
 		84B132CD256927FB001B403B /* project-november */ = {
 			isa = PBXGroup;
 			children = (
+				84ACB7C725811DFE0019C2A6 /* Controllers */,
 				84B13390256A54AD001B403B /* Entities */,
 				84B1336E2569417A001B403B /* ViewModels */,
 				84B1336825693EAB001B403B /* Services */,
@@ -193,6 +261,7 @@
 			children = (
 				84B132D2256927FB001B403B /* ContentView.swift */,
 				84ACB795258115530019C2A6 /* UsersListView.swift */,
+				84ACB7D825811F290019C2A6 /* PhotosView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -270,6 +339,8 @@
 			isa = PBXGroup;
 			children = (
 				84B1337025694192001B403B /* RegisterFormVIewModel.swift */,
+				84ACB7C225811DED0019C2A6 /* PhotosViewModel.swift */,
+				84ACB7D325811E8F0019C2A6 /* RemoteImageURL.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -277,6 +348,7 @@
 		84B1338025694683001B403B /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				84ACB7CD25811E350019C2A6 /* Images */,
 				84B133812569468B001B403B /* TextFields */,
 			);
 			path = Elements;
@@ -293,7 +365,10 @@
 		84B13390256A54AD001B403B /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+
 				84ACB7AE258115D70019C2A6 /* User.swift */,
+				84ACB7BC25811D160019C2A6 /* Api */,
+
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -345,6 +420,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84B132F8256927FD001B403B /* Build configuration list for PBXNativeTarget "project-november" */;
 			buildPhases = (
+				D87D506D33E1ABBCE9396293 /* [CP] Check Pods Manifest.lock */,
 				84B132C7256927FB001B403B /* Sources */,
 				84B132C8256927FB001B403B /* Frameworks */,
 				84B132C9256927FB001B403B /* Resources */,
@@ -463,6 +539,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D87D506D33E1ABBCE9396293 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-project-november-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84B132C7256927FB001B403B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -471,33 +572,39 @@
 				84ACB7A5258115B80019C2A6 /* UserDefaults.swift in Sources */,
 				84B13320256931DB001B403B /* RoundedColoredButtonStyle.swift in Sources */,
 				84ACB796258115530019C2A6 /* UsersListView.swift in Sources */,
+				84ACB7D925811F290019C2A6 /* PhotosView.swift in Sources */,
 				84ACB79B2581156E0019C2A6 /* UserService.swift in Sources */,
-				84B133A0256A5625001B403B /* (null) in Sources */,
+				84B133A0256A5625001B403B /* BuildFile in Sources */,
 				84F928442580EE9B00F0C8B1 /* SystemIcons.swift in Sources */,
 				84B132CF256927FB001B403B /* AppDelegate.swift in Sources */,
 				84B133282569356D001B403B /* RoundedTextFieldStyle.swift in Sources */,
-				84B133BE256A6B27001B403B /* (null) in Sources */,
-				84B13392256A54C0001B403B /* (null) in Sources */,
+				84B133BE256A6B27001B403B /* BuildFile in Sources */,
+				84B13392256A54C0001B403B /* BuildFile in Sources */,
 				84B1337125694192001B403B /* RegisterFormVIewModel.swift in Sources */,
 				84ACB7A0258115A50019C2A6 /* UserBuilder.swift in Sources */,
 				84B132D6256927FB001B403B /* project_november.xcdatamodeld in Sources */,
+				84ACB7D425811E8F0019C2A6 /* RemoteImageURL.swift in Sources */,
 				84B1336A25693EBD001B403B /* Validation.swift in Sources */,
 				84ACB7AF258115D70019C2A6 /* User.swift in Sources */,
 				84B1334E25693C26001B403B /* SystemIconType.swift in Sources */,
 				84B1331525692E3B001B403B /* StringConstants.swift in Sources */,
 				84B1333325693A79001B403B /* TextFieldType.swift in Sources */,
 				84ACB7AA258115CB0019C2A6 /* JsonCoder.swift in Sources */,
-				84B133A6256A56C0001B403B /* (null) in Sources */,
+				84ACB7BE25811D280019C2A6 /* PhotoEntity.swift in Sources */,
+				84B133A6256A56C0001B403B /* BuildFile in Sources */,
 				84B1333325693A79001B403B /* TextFieldType.swift in Sources */,
 				84B1335F25693E24001B403B /* TextFieldInput.swift in Sources */,
+				84ACB7CF25811E4C0019C2A6 /* RemoteImage.swift in Sources */,
 				84B1331A25692FF6001B403B /* Messages.swift in Sources */,
+				84ACB7C325811DED0019C2A6 /* PhotosViewModel.swift in Sources */,
 				84B1330D25692DC7001B403B /* Placeholders.swift in Sources */,
 				84B1335825693C98001B403B /* Regex.swift in Sources */,
 				84B132D1256927FB001B403B /* SceneDelegate.swift in Sources */,
-				84B13399256A5508001B403B /* (null) in Sources */,
+				84B13399256A5508001B403B /* BuildFile in Sources */,
 				84B132D3256927FB001B403B /* ContentView.swift in Sources */,
 				84B133832569469C001B403B /* FormTextField.swift in Sources */,
-				84B133B9256A5BC0001B403B /* (null) in Sources */,
+				84ACB7C925811E150019C2A6 /* PhotosController.swift in Sources */,
+				84B133B9256A5BC0001B403B /* BuildFile in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +769,7 @@
 		};
 		84B132F9256927FD001B403B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF8DDDC98BF9C442B953C8E2 /* Pods-project-november.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -683,6 +791,7 @@
 		};
 		84B132FA256927FD001B403B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 248BDBDD85B6B7FB7F7D81F9 /* Pods-project-november.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
