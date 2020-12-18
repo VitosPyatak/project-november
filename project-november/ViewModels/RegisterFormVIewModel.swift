@@ -1,34 +1,73 @@
 import Foundation
 
 class RegisterFormViewModel: ObservableObject {
-    @Published var model: FormModel = createModel()
+    @Published private var formFields = createFormFields()
+    private var areAllInputsValid = false
+    
     var fields: [TextFieldInput] {
-        get { model.formFields }
-        set { model.formFields = newValue }
+        get { formFields }
+        set { formFields = newValue }
     }
         
     func validateFields() {
-        model.validateFields()
+        for (index, field) in formFields.enumerated() {
+            processFormField(formField: field, index: index)
+        }
+        
+        if areAllFieldsValid() {
+            processPasswordMatching()
+        }
     }
     
     func areAllFieldsValid() -> Bool {
-        model.areAllInputsValid
+        formFields.allSatisfy { field in field.isValid }
     }
     
     func getField(by type: TextFieldType) -> TextFieldInput {
-        model.getField(by: type)
+        formFields.first { field in field.type == type }!
     }
     
     func getField(by index: Int) -> TextFieldInput {
-        model.getField(by: index)
+        formFields[index]
     }
     
     func getLabel(by index: Int) -> String {
-        model.getLabel(by: index)
+        getField(by: index).label()
     }
     
-    private static func createModel() -> FormModel {
-        let formFields: [TextFieldInput] = [
+    private func processFormField(formField: TextFieldInput, index: Int) {
+        if ValidationService.validate(formField.input, by: formField.type) {
+            modifyFieldOnSuccessfullValidation(by: index)
+        } else {
+            modifyFieldOnInvalidInput(by: index)
+        }
+    }
+    
+    private func modifyFieldOnSuccessfullValidation(by index: Int) {
+        formFields[index].isValid = true
+        formFields[index].isValidated = true
+    }
+    
+    private func modifyFieldOnInvalidInput(by index: Int) {
+        formFields[index].isValid = false
+        formFields[index].isValidated = true
+    }
+    
+    private func processPasswordMatching() {
+        if !ValidationService.validateValuesMatching(of: getPasswordFields()) {
+            for index in formFields.indices where formFields[index].type == .passwordConfirmation {
+                modifyFieldOnInvalidInput(by: index)
+            }
+        }
+    }
+    
+    private func getPasswordFields() -> [TextFieldInput] {
+        let passwordFieldsTypes: [TextFieldType] = [.password, .passwordConfirmation]
+        return formFields.filter { field in passwordFieldsTypes.contains(field.type) }
+    }
+    
+    private static func createFormFields() -> [TextFieldInput] {
+        [
             TextFieldInput(.firstname),
             TextFieldInput(.lastname),
             TextFieldInput(.phoneNumber),
@@ -36,6 +75,5 @@ class RegisterFormViewModel: ObservableObject {
             TextFieldInput(.password),
             TextFieldInput(.passwordConfirmation)
         ]
-        return FormModel(formFields: formFields)
     }
 }

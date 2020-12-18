@@ -1,6 +1,8 @@
 import Foundation
 
-struct UserDefaultsService {
+class UserDefaultsService {
+    static let shared = UserDefaultsService()
+    
     private let userDefaults: UserDefaults = .standard
     
     func setArray(_ dataArray: [Data], for key: String) {
