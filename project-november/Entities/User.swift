@@ -1,6 +1,6 @@
 import Foundation
 
-class UserEntity: Codable, Identifiable {
+class User: Codable, Identifiable {
     var firstName: String?
     var lastName: String?
     var phoneNumber: String?

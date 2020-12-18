@@ -1,13 +1,13 @@
 import SwiftUI
 
 struct UsersListView: View {
-    @State private var users: [UserEntity]?
+    @State private var users: [User]?
     
     var body: some View {
         HStack {
             if let allUsers = users {
                 List(allUsers) { user in
-                    VStack {
+                    VStack(alignment: .leading) {
                         Text("\(user.firstName!) \(user.lastName!)").fontWeight(.bold)
                         Text(user.phoneNumber!).fontWeight(.regular)
                     }

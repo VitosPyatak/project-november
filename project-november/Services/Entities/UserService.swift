@@ -1,7 +1,7 @@
 import Foundation
 
 struct UserService {
-    private static let dataService = UserDefaultsService()
+    private static let dataService: UserDefaultsService = .shared
     
     private static let repositoryKey = "#users"
     
@@ -10,14 +10,14 @@ struct UserService {
         processNewInstanceSaving(newUser)
     }
     
-    static func getAll() -> [UserEntity]? {
+    static func getAll() -> [User]? {
         guard let allUsers = dataService.getArray(for: repositoryKey) else {
             return nil
         }
         return getDecodedUsers(from: allUsers)
     }
     
-    private static func processNewInstanceSaving(_ newUser: UserEntity) {
+    private static func processNewInstanceSaving(_ newUser: User) {
         let newUserData = JsonCoder.encode(newUser)
         
         guard var usersData = dataService.getArray(for: repositoryKey) else {
@@ -28,7 +28,7 @@ struct UserService {
         dataService.setArray(usersData, for: repositoryKey)
     }
     
-    private static func getDecodedUsers(from users: [Data]) -> [UserEntity] {
-        users.map { user in JsonCoder.decode(user, of: UserEntity.self) }
+    private static func getDecodedUsers(from users: [Data]) -> [User] {
+        users.map { user in JsonCoder.decode(user, of: User.self) }
     }
 }

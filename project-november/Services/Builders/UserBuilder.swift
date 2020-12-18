@@ -1,15 +1,15 @@
 import Foundation
 
 struct UserBuilder {
-    static func build(from formFields: [TextFieldInput]) -> UserEntity {
-        var newUser = UserEntity()
+    static func build(from formFields: [TextFieldInput]) -> User {
+        var newUser = User()
         for formField in formFields {
             buildProperty(with: formField, for: &newUser)
         }
         return newUser
     }
     
-    private static func buildProperty(with field: TextFieldInput, for user: inout UserEntity) {
+    private static func buildProperty(with field: TextFieldInput, for user: inout User) {
         let fieldInputValue = field.input
         switch field.type {
             case .firstname:

@@ -1,0 +1,11 @@
+disabled_rules:
+  - force_cast
+  - force_try
+  - trailing_whitespace
+
+line_length: 200
+identifier_name:
+  min_length: 2
+
+included:
+  - project-november
